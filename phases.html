@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Notes | 130 Weeks</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="app-container">
+        <nav class="sidebar">
+            <div class="logo">
+                <i class="fa-solid fa-layer-group"></i>
+                <span>130 Weeks</span>
+            </div>
+            
+            <ul class="nav-links">
+                <li><a href="index.html"><i class="fa-solid fa-chart-line"></i> Dashboard</a></li>
+                <li class="active"><a href="phases.html"><i class="fa-solid fa-book-open-reader"></i> Master Notes</a></li>
+            </ul>
+
+            <div class="phase-selector-nav">
+                <h4>Select Phase</h4>
+                <ul id="phase-menu-list" class="phase-menu">
+                    </ul>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <header class="top-bar">
+                <div class="breadcrumb">
+                    <span>Library</span> / <strong id="current-phase-title">Select a Phase</strong>
+                </div>
+                <div class="header-actions">
+                    <button id="theme-toggle" class="icon-btn"><i class="fa-solid fa-circle-half-stroke"></i></button>
+                </div>
+            </header>
+
+            <div id="loading-notes" class="loader">
+                <i class="fa-solid fa-circle-notch fa-spin"></i> Initializing Library...
+            </div>
+
+            <div class="docs-container hidden" id="docs-wrapper">
+                <article class="docs-content" id="notes-content">
+                    <div class="empty-state">
+                        <i class="fa-solid fa-book-open"></i>
+                        <h2>Welcome to the Digital Garden</h2>
+                        <p>Select a phase from the sidebar to view detailed cheat sheets, commands, and logic.</p>
+                    </div>
+                </article>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        const CHEATSHEETS_URL = './cheatsheets.json';
+        let allPhases = [];
+
+        const ui = {
+            loading: document.getElementById('loading-notes'),
+            docsWrapper: document.getElementById('docs-wrapper'),
+            phaseMenuList: document.getElementById('phase-menu-list'),
+            notesContent: document.getElementById('notes-content'),
+            phaseTitleDisplay: document.getElementById('current-phase-title'),
+            themeToggle: document.getElementById('theme-toggle')
+        };
+
+        async function initNotes() {
+            initTheme();
+            try {
+                const response = await fetch(CHEATSHEETS_URL);
+                allPhases = await response.json();
+                
+                ui.loading.classList.add('hidden');
+                ui.docsWrapper.classList.remove('hidden');
+                
+                renderPhaseMenu();
+            } catch (e) {
+                ui.loading.innerHTML = "Error loading data.";
+            }
+        }
+
+        function renderPhaseMenu() {
+            ui.phaseMenuList.innerHTML = allPhases.map((phase, index) => `
+                <li onclick="displayPhase(${index})" class="phase-link" id="link-${index}">
+                    Phase ${index + 1}
+                </li>
+            `).join('');
+        }
+
+        function displayPhase(index) {
+            const phase = allPhases[index];
+            
+            // Update UI State
+            document.querySelectorAll('.phase-link').forEach(el => el.classList.remove('active-phase'));
+            document.getElementById(`link-${index}`).classList.add('active-phase');
+            ui.phaseTitleDisplay.innerText = phase.phaseTitle;
+
+            // Render Content
+            let topicsHTML = phase.topics.map(topic => `
+                <div class="topic-item">
+                    <h3>${topic.topicTitle}</h3>
+                    <p>${topic.text}</p>
+                    ${topic.codeSnippet ? `<div class="code-block"><pre><code>${escapeHTML(topic.codeSnippet)}</code></pre></div>` : ''}
+                </div>
+            `).join('');
+
+            ui.notesContent.innerHTML = `
+                <section class="doc-section animated-in">
+                    <div class="section-badge">Phase ${index + 1}</div>
+                    <h1>${phase.phaseTitle}</h1>
+                    <p class="phase-lead">${phase.description}</p>
+                    <div class="topics-grid">${topicsHTML}</div>
+                </section>
+            `;
+            
+            // Scroll to top of content
+            window.scrollTo(0, 0);
+        }
+
+        function escapeHTML(str) {
+            return str.replace(/[&<>'"]/g, tag => ({
+                '&': '&amp;', '<': '&lt;', '>': '&gt;', "'": '&#39;', '"': '&quot;'
+            }[tag] || tag));
+        }
+
+        // Theme & Initial Load
+        ui.themeToggle.addEventListener('click', () => {
+            const newTheme = document.documentElement.getAttribute('data-theme') === 'dark' ? 'light' : 'dark';
+            document.documentElement.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+        });
+
+        function initTheme() {
+            const saved = localStorage.getItem('theme');
+            document.documentElement.setAttribute('data-theme', saved || 'light');
+        }
+
+        initNotes();
+    </script>
+</body>
+</html>

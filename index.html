@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>130 Weeks | The Developer Marathon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Fira+Code:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div id="auth-modal" class="modal-overlay hidden">
+        <div class="modal-content">
+            <button class="close-modal" id="close-auth"><i class="fa-solid fa-xmark"></i></button>
+            <h2><i class="fa-solid fa-user-shield"></i> Admin Access</h2>
+            <p>Enter the master password to unlock project management.</p>
+            <input type="password" id="admin-password" placeholder="Enter password...">
+            <button id="login-btn" class="primary-btn">Unlock</button>
+            <p id="auth-error" class="error-text hidden">Incorrect password.</p>
+        </div>
+    </div>
+
+    <div class="app-container">
+        <nav class="sidebar">
+            <div class="logo">
+                <i class="fa-solid fa-layer-group"></i>
+                <span>130 Weeks</span>
+            </div>
+            
+            <ul class="nav-links">
+                <li class="active" data-target="dashboard-view">
+                    <i class="fa-solid fa-bolt"></i> Current Week
+                </li>
+                <li data-target="past-projects-view">
+                    <i class="fa-solid fa-clock-rotate-left"></i> Past Projects
+                </li>
+                <li data-target="all-projects-view">
+                    <i class="fa-solid fa-box-archive"></i> Archive (All)
+                </li>
+                <li>
+                    <a href="phases.html"><i class="fa-solid fa-book-open-reader"></i> Master Notes</a>
+                </li>
+            </ul>
+
+            <div class="sidebar-stats">
+                <h4>Overall Progress</h4>
+                <div class="progress-bar-container">
+                    <div class="progress-bar" id="master-progress"></div>
+                </div>
+                <span id="progress-text">0 / 130 Completed</span>
+            </div>
+        </nav>
+
+        <main class="main-content">
+            <header class="top-bar">
+                <div class="header-search"></div>
+                <div class="header-actions">
+                    <button id="theme-toggle" class="icon-btn" title="Toggle Theme">
+                        <i class="fa-solid fa-circle-half-stroke"></i>
+                    </button>
+                    <button id="admin-toggle" class="icon-btn admin-locked" title="Admin Login">
+                        <i class="fa-solid fa-lock"></i>
+                    </button>
+                </div>
+            </header>
+
+            <div id="loading-spinner" class="loader">
+                <i class="fa-solid fa-circle-notch fa-spin"></i> Initializing ecosystem...
+            </div>
+
+            <section id="dashboard-view" class="view-section">
+                <div class="welcome-banner">
+                    <h1>Active Mission</h1>
+                    <p>Focusing on one concept, one project, one week at a time.</p>
+                </div>
+                <div id="current-week-container" class="spotlight-container"></div>
+            </section>
+
+            <section id="past-projects-view" class="view-section hidden">
+                <h2 class="section-title">Completed Operations</h2>
+                <div id="past-grid" class="grid-layout"></div>
+            </section>
+
+            <section id="all-projects-view" class="view-section hidden">
+                <h2 class="section-title">Master Roadmap</h2>
+                <div class="filter-bar">
+                    <select id="phase-filter">
+                        <option value="all">All Phases</option>
+                    </select>
+                </div>
+                <div id="project-grid" class="grid-layout"></div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js" defer></script>
+</body>
+</html>

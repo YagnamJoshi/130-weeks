@@ -1,0 +1,2494 @@
+[
+  {
+    "week": 1,
+    "phase": "1: Frontend Web Dev",
+    "title": "Portfolio Scaffold",
+    "description": "Build the HTML/CSS grid that will house this exact 130-week project tracker.",
+    "deliverable": "A responsive, mobile-friendly webpage displaying a grid of project cards.",
+    "time_required": {
+      "min_hours": 3,
+      "max_hours": 6
+    },
+    "difficulty": "Beginner",
+    "tech_stack": [
+      "HTML5",
+      "CSS3",
+      "CSS Grid"
+    ],
+    "hints": [
+      "Focus on CSS Grid for the layout.",
+      "Don't worry about JavaScript yet."
+    ],
+    "stretch_goals": [
+      "Add a dark mode toggle button."
+    ],
+    "resources": [
+      {
+        "name": "CSS Grid Guide",
+        "url": "https://css-tricks.com/snippets/css/complete-guide-grid/"
+      }
+    ],
+    "status": "pending",
+    "links": {
+      "github_repo": "",
+      "live_demo": ""
+    }
+  },
+  {
+    "week": 2,
+    "phase": "1: Frontend Web Dev",
+    "title": "Interactive Task Manager",
+    "description": "A step up from a basic to-do list. Add the ability to filter tasks and save them to the browser's Local Storage.",
+    "deliverable": "A working task manager where data persists after page refresh.",
+    "time_required": {
+      "min_hours": 4,
+      "max_hours": 8
+    },
+    "difficulty": "Beginner",
+    "tech_stack": [
+      "HTML5",
+      "CSS3",
+      "Vanilla JS"
+    ],
+    "hints": [
+      "Use `localStorage.setItem()` to save the JavaScript array."
+    ],
+    "stretch_goals": [
+      "Add a drag-and-drop feature to reorder tasks."
+    ],
+    "resources": [
+      {
+        "name": "MDN Local Storage",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/API/Window/localStorage"
+      }
+    ],
+    "status": "pending",
+    "links": {
+      "github_repo": "",
+      "live_demo": ""
+    }
+  },
+  {
+    "week": 3,
+    "phase": "1: Frontend Web Dev",
+    "title": "Zen Music Player UI",
+    "description": "Build a clean, static interface for an audio player tailored for long meditation or focus tracks.",
+    "deliverable": "A visual player with play/pause toggles, a progress bar, and volume controls.",
+    "time_required": {
+      "min_hours": 4,
+      "max_hours": 7
+    },
+    "difficulty": "Beginner",
+    "tech_stack": [
+      "HTML5",
+      "CSS3",
+      "Vanilla JS"
+    ],
+    "hints": [
+      "Use HTML5 `<audio>` tags for the actual media handling."
+    ],
+    "stretch_goals": [
+      "Create a visual audio equalizer animation using CSS."
+    ],
+    "resources": [
+      {
+        "name": "HTML Audio Element",
+        "url": "https://developer.mozilla.org/en-US/docs/Web/HTML/Element/audio"
+      }
+    ],
+    "status": "pending",
+    "links": {
+      "github_repo": "",
+      "live_demo": ""
+    }
+  },
+  {
+    "week": 4,
+    "phase": "1: Frontend Web Dev",
+    "title": "API Weather Dashboard",
+    "description": "Build a dashboard that fetches real-time weather data from a free public API.",
+    "deliverable": "A deployed web app displaying current temperature and dynamic weather icons.",
+    "time_required": {
+      "min_hours": 5,
+      "max_hours": 10
+    },
+    "difficulty": "Intermediate",
+    "tech_stack": [
+      "Vanilla JS",
+      "REST APIs"
+    ],
+    "hints": [
+      "Use the native JavaScript `fetch()` API."
+    ],
+    "stretch_goals": [
+      "Use Geolocation to fetch weather for the user's current location."
+    ],
+    "resources": [
+      {
+        "name": "OpenWeatherMap API",
+        "url": "https://openweathermap.org/api"
+      }
+    ],
+    "status": "pending",
+    "links": {
+      "github_repo": "",
+      "live_demo": ""
+    }
+  },
+  {
+    "week": 5,
+    "phase": "1: Frontend Web Dev",
+    "title": "Custom Pomodoro Timer",
+    "description": "Create a productivity timer with customizable work and break intervals.",
+    "deliverable": "A timer that counts down, triggers an alarm sound, and logs completed sessions.",
+    "time_required": {
+      "min_hours": 4,
+      "max_hours": 8
+    },
+    "difficulty": "Beginner",
+    "tech_stack": [
+      "HTML5",
+      "CSS3",
+      "Vanilla JS"
+    ],
+    "hints": [
+      "Use `setInterval()` for the countdown logic."
+    ],
+    "stretch_goals": [
+      "Add an SVG circular progress bar that empties as time ticks down."
+    ],
+    "resources": [],
+    "status": "pending",
+    "links": {
+      "github_repo": "",
+      "live_demo": ""
+    }
+  },
+  {
+    "week": 6,
+    "phase": "1: Frontend Web Dev",
+    "title": "Markdown Note Taker",
+    "description": "A split-screen editor where you type Markdown on the left and see formatted HTML on the right.",
+    "deliverable": "A functional Markdown previewer.",
+    "time_required": {
+      "min_hours": 5,
+      "max_hours": 9
+    },
+    "difficulty": "Intermediate",
+    "tech_stack": [
+      "Vanilla JS",
+      "Marked.js API"
+    ],
+    "hints": [
+      "Don't write your own parser; use a library like Marked.js via CDN."
+    ],
+    "stretch_goals": [
+      "Add a 'Download as .md' button."
+    ],
+    "resources": [
+      {
+        "name": "Marked.js Documentation",
+        "url": "https://marked.js.org/"
+      }
+    ],
+    "status": "pending",
+    "links": {
+      "github_repo": "",
+      "live_demo": ""
+    }
+  },
+  {
+    "week": 7,
+    "phase": "1: Frontend Web Dev",
+    "title": "Memory Card Game",
+    "description": "A classic grid-based memory matching game.",
+    "deliverable": "A playable game with move counters, a timer, and a win state.",
+    "time_required": {
+      "min_hours": 5,
+      "max_hours": 10
+    },
+    "difficulty": "Intermediate",
+    "tech_stack": [
+      "CSS3",
+      "Vanilla JS"
+    ],
+    "hints": [
+      "Use CSS 3D transforms for the card flipping effect."
+    ],
+    "stretch_goals": [
+      "Add multiple difficulty levels (grid sizes)."
+    ],
+    "resources": [],
+    "status": "pending",
+    "links": {
+      "github_repo": "",
+      "live_demo": ""
+    }
+  },
+  {
+    "week": 8,
+    "phase": "1: Frontend Web Dev",
+    "title": "Expense Tracker",
+    "description": "An app to log income and expenses, updating a running balance.",
+    "deliverable": "A UI that categorizes inputs and visualizes cash flow.",
+    "time_required": {
+      "min_hours": 4,
+      "max_hours": 8
+    },
+    "difficulty": "Beginner",
+    "tech_stack": [
+      "Vanilla JS",
+      "DOM Manipulation"
+    ],
+    "hints": [
+      "Use array `.reduce()` to quickly calculate total balances."
+    ],
+    "stretch_goals": [
+      "Integrate Chart.js to show a pie chart of spending categories."
+    ],
+    "resources": [],
+    "status": "pending",
+    "links": {
+      "github_repo": "",
+      "live_demo": ""
+    }
+  },
+  {
+    "week": 9,
+    "phase": "1: Frontend Web Dev",
+    "title": "Interactive Quiz App",
+    "description": "A multiple-choice quiz that pulls questions from the Open Trivia API.",
+    "deliverable": "A dynamically generated quiz with score tracking.",
+    "time_required": {
+      "min_hours": 5,
+      "max_hours": 9
+    },
+    "difficulty": "Intermediate",
+    "tech_stack": [
+      "Vanilla JS",
+      "REST APIs"
+    ],
+    "hints": [
+      "Handle the API response carefully to randomize the correct answer's position."
+    ],
+    "stretch_goals": [
+      "Implement a leaderboard using Local Storage."
+    ],
+    "resources": [
+      {
+        "name": "Open Trivia DB",
+        "url": "https://opentdb.com/api_config.php"
+      }
+    ],
+    "status": "pending",
+    "links": {
+      "github_repo": "",
+      "live_demo": ""
+    }
+  },
+  {
+    "week": 10,
+    "phase": "1: Frontend Web Dev",
+    "title": "GitHub Profile Fetcher",
+    "description": "An app that takes a GitHub username and displays their repositories, followers, and bio.",
+    "deliverable": "A clean card UI populated by GitHub's public API data.",
+    "time_required": {
+      "min_hours": 3,
+      "max_hours": 6
+    },
+    "difficulty": "Beginner",
+    "tech_stack": [
+      "Vanilla JS",
+      "Fetch API"
+    ],
+    "hints": [
+      "Use `https://api.github.com/users/{username}`."
+    ],
+    "stretch_goals": [
+      "Handle 404 errors gracefully with a 'User Not Found' UI state."
+    ],
+    "resources": [],
+    "status": "pending",
+    "links": {
+      "github_repo": "",
+      "live_demo": ""
+    }
+  },
+  {
+    "week": 11,
+    "phase": "1: Frontend Web Dev",
+    "title": "Phase Pages Layout Scaffold",
+    "description": "Design the HTML/CSS template for the dedicated 'Phase Pages' where you will store commands and notes.",
+    "deliverable": "A reusable layout featuring a sidebar navigation and a main content area.",
+    "time_required": {
+      "min_hours": 4,
+      "max_hours": 7
+    },
+    "difficulty": "Beginner",
+    "tech_stack": [
+      "HTML5",
+      "CSS Flexbox/Grid"
+    ],
+    "hints": [
+      "Plan for scalability. Ensure the sidebar collapses into a hamburger menu on mobile."
+    ],
+    "stretch_goals": [
+      "Create CSS variables for easy theme swapping later."
+    ],
+    "resources": [],
+    "status": "pending",
+    "links": {
+      "github_repo": "",
+      "live_demo": ""
+    }
+  },
+  {
+    "week": 12,
+    "phase": "1: Frontend Web Dev",
+    "title": "Typing Speed Tester",
+    "description": "An app that calculates Words Per Minute (WPM) and accuracy.",
+    "deliverable": "A text input interface that highlights typing errors in real-time.",
+    "time_required": {
+      "min_hours": 6,
+      "max_hours": 10
+    },
+    "difficulty": "Intermediate",
+    "tech_stack": [
+      "Vanilla JS",
+      "Event Listeners"
+    ],
+    "hints": [
+      "Listen to the `input` event on a textarea to compare keystrokes against a target string."
+    ],
+    "stretch_goals": [
+      "Implement a dynamic WPM line chart that updates as the user types."
+    ],
+    "resources": [],
+    "status": "pending",
+    "links": {
+      "github_repo": "",
+      "live_demo": ""
+    }
+  },
+  {
+    "week": 13,
+    "phase": "1: Frontend Web Dev",
+    "title": "Custom UI Component Library",
+    "description": "Build a set of reusable JavaScript components (modals, accordions, tooltips) from scratch without libraries.",
+    "deliverable": "A single page demonstrating various interactive UI elements.",
+    "time_required": {
+      "min_hours": 5,
+      "max_hours": 9
+    },
+    "difficulty": "Intermediate",
+    "tech_stack": [
+      "CSS3",
+      "Vanilla JS"
+    ],
+    "hints": [
+      "Focus on accessibility (ARIA roles) for these components."
+    ],
+    "stretch_goals": [
+      "Package them into a single JS class so they can be easily instantiated."
+    ],
+    "resources": [],
+    "status": "pending",
+    "links": {
+      "github_repo": "",
+      "live_demo": ""
+    }
+  },
+  {
+    "week": 14,
+    "phase": "1: Frontend Web Dev",
+    "title": "Dynamic Data Filter",
+    "description": "Build a filtering system that sorts a grid of items by categories (e.g., filtering projects by tech stack).",
+    "deliverable": "A smooth UI that animates elements out of the DOM when filtered out.",
+    "time_required": {
+      "min_hours": 4,
+      "max_hours": 8
+    },
+    "difficulty": "Intermediate",
+    "tech_stack": [
+      "Vanilla JS",
+      "CSS Animations"
+    ],
+    "hints": [
+      "Use HTML `data-` attributes to tag elements for easy filtering in JS."
+    ],
+    "stretch_goals": [
+      "Allow multi-category selection (e.g., filtering for both 'Python' AND 'Beginner')."
+    ],
+    "resources": [],
+    "status": "pending",
+    "links": {
+      "github_repo": "",
+      "live_demo": ""
+    }
+  },
+  {
+    "week": 15,
+    "phase": "1: Frontend Web Dev",
+    "title": "PHASE CAPSTONE: The Second Brain Hub",
+    "description": "Combine the portfolio scaffold, dynamic filtering, and phase pages into one cohesive, interactive dashboard hooked up to JSONBin.",
+    "deliverable": "The finalized frontend shell for your entire 130-week marathon.",
+    "time_required": {
+      "min_hours": 8,
+      "max_hours": 15
+    },
+    "difficulty": "Advanced",
+    "tech_stack": [
+      "HTML5",
+      "CSS3",
+      "Vanilla JS",
+      "JSONBin API"
+    ],
+    "hints": [
+      "This is where you implement the `fetch()` logic to pull this exact JSON file and render the cards dynamically."
+    ],
+    "stretch_goals": [
+      "Add skeleton loading states while the JSON data is being fetched."
+    ],
+    "resources": [],
+    "status": "pending",
+    "links": {
+      "github_repo": "",
+      "live_demo": ""
+    }
+  },
+  {
+    "week": 16,
+    "phase": "2: Python & Data Science",
+    "title": "Python CLI Task Manager",
+    "description": "Translate your web-based task manager into a pure Python command-line interface.",
+    "deliverable": "A script that accepts arguments to add, list, and complete tasks, saving them to a local JSON file.",
+    "time_required": {
+      "min_hours": 3,
+      "max_hours": 6
+    },
+    "difficulty": "Beginner",
+    "tech_stack": [
+      "Python",
+      "Argparse",
+      "JSON"
+    ],
+    "hints": [
+      "Use Python's built-in `argparse` module to handle command-line inputs cleanly."
+    ],
+    "stretch_goals": [
+      "Add colorized terminal output using a library like `colorama`."
+    ],
+    "resources": [
+      {
+        "name": "Argparse Docs",
+        "url": "https://docs.python.org/3/library/argparse.html"
+      }
+    ],
+    "status": "pending",
+    "links": {
+      "github_repo": "",
+      "live_demo": ""
+    }
+  },
+  {
+    "week": 17,
+    "phase": "2: Python & Data Science",
+    "title": "Automated Web Scraper",
+    "description": "Build a script that extracts article headlines and links from a news site or blog.",
+    "deliverable": "A Python script that outputs scraped data into a structured CSV file.",
+    "time_required": {
+      "min_hours": 4,
+      "max_hours": 8
+    },
+    "difficulty": "Beginner",
+    "tech_stack": [
+      "Python",
+      "BeautifulSoup",
+      "Requests"
+    ],
+    "hints": [
+      "Always inspect the target website's `robots.txt` before scraping."
+    ],
+    "stretch_goals": [
+      "Schedule the script to run daily and append new articles to the CSV without duplicating."
+    ],
+    "resources": [],
+    "status": "pending",
+    "links": {
+      "github_repo": "",
+      "live_demo": ""
+    }
+  },
+  {
+    "week": 18,
+    "phase": "2: Python & Data Science",
+    "title": "Basic Statistical Calculator",
+    "description": "A script designed to parse an array of numbers and calculate the mean, median, and mode from scratch.",
+    "deliverable": "A reusable math module.",
+    "time_required": {
+      "min_hours": 3,
+      "max_hours": 6
+    },
+    "difficulty": "Beginner",
+    "tech_stack": [
+      "Python",
+      "Math Library"
+    ],
+    "hints": [
+      "Don't use Pandas yet. Write the raw mathematical logic yourself to understand the core formulas."
+    ],
+    "stretch_goals": [
+      "Handle edge cases, like bimodal datasets or empty inputs gracefully."
+    ],
+    "resources": [],
+    "status": "pending",
+    "links": {
+      "github_repo": "",
+      "live_demo": ""
+    }
+  },
+  {
+    "week": 19,
+    "phase": "2: Python & Data Science",
+    "title": "Advanced Stats & Variance Engine",
+    "description": "Extend your statistical calculator to compute variance, standard deviation, skewness, and kurtosis.",
+    "deliverable": "A robust CLI tool that outputs advanced descriptive statistics from a raw data input.",
+    "time_required": {
+      "min_hours": 5,
+      "max_hours": 9
+    },
+    "difficulty": "Intermediate",
+    "tech_stack": [
+      "Python",
+      "NumPy"
+    ],
+    "hints": [
+      "Transition to using NumPy here. It is optimized for high-performance array operations."
+    ],
+    "stretch_goals": [
+      "Generate a text-based histogram in the terminal to visualize the distribution curve."
+    ],
+    "resources": [],
+    "status": "pending",
+    "links": {
+      "github_repo": "",
+      "live_demo": ""
+    }
+  },
+  {
+    "week": 20,
+    "phase": "2: Python & Data Science",
+    "title": "Bulk Document Converter",
+    "description": "A utility script that reads a directory of Markdown files and compiles them into properly formatted Microsoft Word documents.",
+    "deliverable": "An automated pipeline for converting developer notes into shareable `.docx` formats.",
+    "time_required": {
+      "min_hours": 5,
+      "max_hours": 8
+    },
+    "difficulty": "Intermediate",
+    "tech_stack": [
+      "Python",
+      "python-docx",
+      "Markdown Library"
+    ],
+    "hints": [
+      "Map Markdown heading levels (`#`, `##`) directly to Microsoft Word heading styles."
+    ],
+    "stretch_goals": [
+      "Add functionality to embed images referenced in the Markdown into the final Word document."
+    ],
+    "resources": [
+      {
+        "name": "python-docx Docs",
+        "url": "https://python-docx.readthedocs.io/"
+      }
+    ],
+    "status": "pending",
+    "links": {
+      "github_repo": "",
+      "live_demo": ""
+    }
+  },
+  {
+    "week": 21,
+    "phase": "2: Python & Data Science",
+    "title": "CSV Data Cleaner",
+    "description": "Load a massive, messy dataset (like Kaggle Titanic data) and clean it by handling missing values and dropping duplicates.",
+    "deliverable": "A script that outputs a pristine, analysis-ready CSV.",
+    "time_required": {
+      "min_hours": 4,
+      "max_hours": 8
+    },
+    "difficulty": "Intermediate",
+    "tech_stack": [
+      "Python",
+      "Pandas"
+    ],
+    "hints": [
+      "Familiarize yourself with `df.dropna()` and `df.fillna()` methods in Pandas."
+    ],
+    "stretch_goals": [
+      "Write a generic reporting function that prints out how many rows were dropped or altered."
+    ],
+    "resources": [],
+    "status": "pending",
+    "links": {
+      "github_repo": "",
+      "live_demo": ""
+    }
+  },
+  {
+    "week": 22,
+    "phase": "2: Python & Data Science",
+    "title": "Playlist Audio Features Extractor",
+    "description": "Connect to the Spotify API to pull metadata and audio features (tempo, energy, acousticness) from a public playlist.",
+    "deliverable": "A Pandas DataFrame populated with rich audio data.",
+    "time_required": {
+      "min_hours": 5,
+      "max_hours": 9
+    },
+    "difficulty": "Intermediate",
+    "tech_stack": [
+      "Python",
+      "Spotipy API",
+      "Pandas"
+    ],
+    "hints": [
+      "You will need to set up a developer account with Spotify to get your OAuth tokens."
+    ],
+    "stretch_goals": [
+      "Rank the tracks based on specific audio metrics and export the top 10."
+    ],
+    "resources": [
+      {
+        "name": "Spotipy Documentation",
+        "url": "https://spotipy.readthedocs.io/"
+      }
+    ],
+    "status": "pending",
+    "links": {
+      "github_repo": "",
+      "live_demo": ""
+    }
+  },
+  {
+    "week": 23,
+    "phase": "2: Python & Data Science",
+    "title": "Data Visualizer Engine",
+    "description": "Take the clean dataset from Week 21 or 22 and generate insightful charts (bar graphs, scatter plots, correlation matrices).",
+    "deliverable": "A script that saves high-resolution `.png` graphs to a local folder.",
+    "time_required": {
+      "min_hours": 4,
+      "max_hours": 8
+    },
+    "difficulty": "Intermediate",
+    "tech_stack": [
+      "Python",
+      "Matplotlib",
+      "Seaborn"
+    ],
+    "hints": [
+      "Seaborn makes complex statistical plots much easier to read than basic Matplotlib."
+    ],
+    "stretch_goals": [
+      "Create a multi-plot figure that displays four different visual metrics on one canvas."
+    ],
+    "resources": [],
+    "status": "pending",
+    "links": {
+      "github_repo": "",
+      "live_demo": ""
+    }
+  },
+  {
+    "week": 24,
+    "phase": "2: Python & Data Science",
+    "title": "Automated Email Reporter",
+    "description": "Write a script that attaches your generated data visualization graphs and a summary text file, then emails it securely via SMTP.",
+    "deliverable": "A functioning email automation pipeline.",
+    "time_required": {
+      "min_hours": 4,
+      "max_hours": 7
+    },
+    "difficulty": "Intermediate",
+    "tech_stack": [
+      "Python",
+      "smtplib",
+      "email.mime"
+    ],
+    "hints": [
+      "Use an 'App Password' if using Gmail, as standard passwords will be blocked for security."
+    ],
+    "stretch_goals": [
+      "Pull the email body text directly from an external database or API."
+    ],
+    "resources": [],
+    "status": "pending",
+    "links": {
+      "github_repo": "",
+      "live_demo": ""
+    }
+  },
+  {
+    "week": 25,
+    "phase": "2: Python & Data Science",
+    "title": "Weather Data Logger",
+    "description": "A script that pings a weather API every hour and appends the temperature and conditions to an SQLite database.",
+    "deliverable": "A lightweight, persistent local database tracking time-series data.",
+    "time_required": {
+      "min_hours": 5,
+      "max_hours": 9
+    },
+    "difficulty": "Intermediate",
+    "tech_stack": [
+      "Python",
+      "SQLite3",
+      "Requests"
+    ],
+    "hints": [
+      "Use DB Browser for SQLite to visually inspect your tables without writing queries."
+    ],
+    "stretch_goals": [
+      "Write a script to query the database and find the average temperature over the last 24 hours."
+    ],
+    "resources": [],
+    "status": "pending",
+    "links": {
+      "github_repo": "",
+      "live_demo": ""
+    }
+  },
+  {
+    "week": 26,
+    "phase": "2: Python & Data Science",
+    "title": "Grid Pathfinding Logic (A* Prep)",
+    "description": "Build the raw mathematical logic for an A* pathfinding algorithm that navigates a 2D array in the terminal.",
+    "deliverable": "A pure Python script that calculates the shortest path from point A to point B around hardcoded obstacles.",
+    "time_required": {
+      "min_hours": 6,
+      "max_hours": 12
+    },
+    "difficulty": "Advanced",
+    "tech_stack": [
+      "Python",
+      "Algorithms"
+    ],
+    "hints": [
+      "Focus entirely on the logic (Heuristics, Open Sets, Closed Sets) before worrying about visual graphics in C++ later."
+    ],
+    "stretch_goals": [
+      "Print the grid to the terminal using ASCII characters to trace the final path."
+    ],
+    "resources": [
+      {
+        "name": "A* Search Algorithm",
+        "url": "https://en.wikipedia.org/wiki/A*_search_algorithm"
+      }
+    ],
+    "status": "pending",
+    "links": {
+      "github_repo": "",
+      "live_demo": ""
+    }
+  },
+  {
+    "week": 27,
+    "phase": "2: Python & Data Science",
+    "title": "Stock Price Visualizer",
+    "description": "Pull historical stock data using the yfinance library and plot moving averages.",
+    "deliverable": "A script that outputs a professional-looking financial chart with trend lines.",
+    "time_required": {
+      "min_hours": 4,
+      "max_hours": 8
+    },
+    "difficulty": "Intermediate",
+    "tech_stack": [
+      "Python",
+      "yfinance",
+      "Pandas",
+      "Matplotlib"
+    ],
+    "hints": [
+      "Calculate a 50-day and 200-day Simple Moving Average (SMA) using Pandas' `.rolling()` method."
+    ],
+    "stretch_goals": [
+      "Highlight sections on the graph where the 50-day SMA crosses the 200-day SMA."
+    ],
+    "resources": [],
+    "status": "pending",
+    "links": {
+      "github_repo": "",
+      "live_demo": ""
+    }
+  },
+  {
+    "week": 28,
+    "phase": "2: Python & Data Science",
+    "title": "Local File Organizer",
+    "description": "A script that scans your 'Downloads' folder and automatically moves files into categorized folders based on their extensions (.pdf, .jpg, .docx).",
+    "deliverable": "A clean, automated file management utility.",
+    "time_required": {
+      "min_hours": 3,
+      "max_hours": 5
+    },
+    "difficulty": "Beginner",
+    "tech_stack": [
+      "Python",
+      "OS Module",
+      "Shutil"
+    ],
+    "hints": [
+      "Test this on a dummy folder first so you don't accidentally lose important files!"
+    ],
+    "stretch_goals": [
+      "Add a feature to log moved files in a `.txt` audit trail."
+    ],
+    "resources": [],
+    "status": "pending",
+    "links": {
+      "github_repo": "",
+      "live_demo": ""
+    }
+  },
+  {
+    "week": 29,
+    "phase": "2: Python & Data Science",
+    "title": "Simple Python Web API",
+    "description": "Use Flask or FastAPI to serve your own custom data (like your 130-week project list) over a local network.",
+    "deliverable": "A locally hosted API endpoint that returns JSON when visited in a browser.",
+    "time_required": {
+      "min_hours": 5,
+      "max_hours": 10
+    },
+    "difficulty": "Intermediate",
+    "tech_stack": [
+      "Python",
+      "FastAPI",
+      "Uvicorn"
+    ],
+    "hints": [
+      "FastAPI is highly recommended here due to its automatic documentation generation (Swagger UI)."
+    ],
+    "stretch_goals": [
+      "Implement basic API key authentication for your endpoints."
+    ],
+    "resources": [
+      {
+        "name": "FastAPI Docs",
+        "url": "https://fastapi.tiangolo.com/"
+      }
+    ],
+    "status": "pending",
+    "links": {
+      "github_repo": "",
+      "live_demo": ""
+    }
+  },
+  {
+    "week": 30,
+    "phase": "2: Python & Data Science",
+    "title": "API + Database Integration",
+    "description": "Connect your new Web API from Week 29 to your SQLite database from Week 25.",
+    "deliverable": "An API that allows users to execute GET requests to retrieve live database records.",
+    "time_required": {
+      "min_hours": 5,
+      "max_hours": 9
+    },
+    "difficulty": "Intermediate",
+    "tech_stack": [
+      "Python",
+      "FastAPI",
+      "SQLite3",
+      "SQL"
+    ],
+    "hints": [
+      "Ensure your SQL queries are parameterized to prevent SQL injection (good practice for Phase 9)."
+    ],
+    "stretch_goals": [
+      "Add POST routes to allow external data insertion into the database."
+    ],
+    "resources": [],
+    "status": "pending",
+    "links": {
+      "github_repo": "",
+      "live_demo": ""
+    }
+  },
+  {
+    "week": 31,
+    "phase": "2: Python & Data Science",
+    "title": "Sentiment Analysis Script",
+    "description": "Use a basic NLP library to parse a block of text and determine if the sentiment is positive, negative, or neutral.",
+    "deliverable": "A script that grades product reviews or tweets on a sentiment scale.",
+    "time_required": {
+      "min_hours": 4,
+      "max_hours": 8
+    },
+    "difficulty": "Intermediate",
+    "tech_stack": [
+      "Python",
+      "NLTK",
+      "TextBlob"
+    ],
+    "hints": [
+      "TextBlob is an excellent wrapper for NLTK that makes sentiment scoring incredibly simple."
+    ],
+    "stretch_goals": [
+      "Scrape live reviews from a website and analyze the overall sentiment of a product."
+    ],
+    "resources": [],
+    "status": "pending",
+    "links": {
+      "github_repo": "",
+      "live_demo": ""
+    }
+  },
+  {
+    "week": 32,
+    "phase": "2: Python & Data Science",
+    "title": "Interactive Data App (Streamlit)",
+    "description": "Turn your Python data scripts into an interactive, browser-based web application with zero frontend code.",
+    "deliverable": "A deployed Streamlit app where a user can adjust parameters via sliders to change the data output.",
+    "time_required": {
+      "min_hours": 5,
+      "max_hours": 9
+    },
+    "difficulty": "Intermediate",
+    "tech_stack": [
+      "Python",
+      "Streamlit"
+    ],
+    "hints": [
+      "Streamlit reruns the entire script top-to-bottom every time a user interaction occurs, so cache heavy data loads."
+    ],
+    "stretch_goals": [
+      "Deploy the app publicly using Streamlit Community Cloud."
+    ],
+    "resources": [
+      {
+        "name": "Streamlit Setup",
+        "url": "https://streamlit.io/"
+      }
+    ],
+    "status": "pending",
+    "links": {
+      "github_repo": "",
+      "live_demo": ""
+    }
+  },
+  {
+    "week": 33,
+    "phase": "2: Python & Data Science",
+    "title": "Automated EDA Profiler",
+    "description": "Build a script that takes any raw CSV file and automatically generates a comprehensive HTML report of missing values, correlations, and distributions.",
+    "deliverable": "A universal data profiling utility.",
+    "time_required": {
+      "min_hours": 3,
+      "max_hours": 6
+    },
+    "difficulty": "Intermediate",
+    "tech_stack": [
+      "Python",
+      "YData Profiling (Pandas Profiling)"
+    ],
+    "hints": [
+      "This is essentially a 'magic' library that does heavy EDA visualization in a single line of code."
+    ],
+    "stretch_goals": [
+      "Integrate this into your FastAPI server to allow users to upload CSVs via the web and receive a report."
+    ],
+    "resources": [],
+    "status": "pending",
+    "links": {
+      "github_repo": "",
+      "live_demo": ""
+    }
+  },
+  {
+    "week": 34,
+    "phase": "2: Python & Data Science",
+    "title": "Jupyter Notebook Masterclass",
+    "description": "Take your most complex dataset so far and conduct a full Exploratory Data Analysis (EDA) within a Jupyter Notebook, documenting every step in Markdown cells.",
+    "deliverable": "A comprehensive `.ipynb` file that reads like a professional data science report.",
+    "time_required": {
+      "min_hours": 6,
+      "max_hours": 10
+    },
+    "difficulty": "Intermediate",
+    "tech_stack": [
+      "Python",
+      "Jupyter",
+      "Pandas"
+    ],
+    "hints": [
+      "Focus heavily on the storytelling aspect. Data science is about explaining the numbers, not just calculating them."
+    ],
+    "stretch_goals": [
+      "Export the finalized notebook as an interactive HTML file."
+    ],
+    "resources": [],
+    "status": "pending",
+    "links": {
+      "github_repo": "",
+      "live_demo": ""
+    }
+  },
+  {
+    "week": 35,
+    "phase": "2: Python & Data Science",
+    "title": "PHASE CAPSTONE: Statistical Dashboard Engine",
+    "description": "Combine Streamlit, your advanced statistics calculators, and Matplotlib into one unified application. Allow a user to upload a raw CSV, run a full statistical breakdown, and output an interactive web report displaying the variance, standard deviation, skewness, kurtosis, and rich visual plots.",
+    "deliverable": "A fully functional, interactive data science web application.",
+    "time_required": {
+      "min_hours": 8,
+      "max_hours": 15
+    },
+    "difficulty": "Advanced",
+    "tech_stack": [
+      "Python",
+      "Streamlit",
+      "Pandas",
+      "NumPy",
+      "Matplotlib"
+    ],
+    "hints": [
+      "Use Streamlit's `st.file_uploader` to accept dynamic user datasets.",
+      "Ensure you handle errors if a user uploads a CSV with non-numeric data."
+    ],
+    "stretch_goals": [
+      "Add an export button that compiles the web dashboard into a downloadable PDF report."
+    ],
+    "resources": [],
+    "status": "pending",
+    "links": {
+      "github_repo": "",
+      "live_demo": ""
+    }
+  },
+  {
+    "week": 36,
+    "phase": "3: Core Logic & Algorithms",
+    "title": "C++ Fundamentals & I/O",
+    "description": "Set up your C++ compiler and build a robust command-line calculator that can parse complex mathematical strings.",
+    "deliverable": "A compiled CLI program that safely handles user input and mathematical order of operations.",
+    "time_required": { "min_hours": 4, "max_hours": 7 },
+    "difficulty": "Beginner",
+    "tech_stack": ["C++", "CLI"],
+    "hints": ["Focus on setting up a solid `CMakeLists.txt` file so compiling is easy moving forward."],
+    "stretch_goals": ["Add support for algebraic variables (e.g., storing 'x = 5')."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 37,
+    "phase": "3: Core Logic & Algorithms",
+    "title": "Pointers & Memory Manager",
+    "description": "Dive into manual memory management by building a custom Linked List data structure from scratch using raw pointers.",
+    "deliverable": "A C++ program that can create, traverse, and safely delete a dynamic linked list without memory leaks.",
+    "time_required": { "min_hours": 5, "max_hours": 10 },
+    "difficulty": "Intermediate",
+    "tech_stack": ["C++", "Pointers"],
+    "hints": ["Always pair every `new` keyword with a `delete` keyword.", "Use tools like Valgrind to check for memory leaks."],
+    "stretch_goals": ["Convert the singly linked list into a doubly linked list."],
+    "resources": [{"name": "Pointers in C++", "url": "https://cplusplus.com/doc/tutorial/pointers/"}],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 38,
+    "phase": "3: Core Logic & Algorithms",
+    "title": "Sorting Algorithm Benchmarker",
+    "description": "Implement Bubble Sort, Merge Sort, and Quick Sort. Generate an array of 10,000 random integers and time how long each takes to execute.",
+    "deliverable": "A CLI tool that outputs exact execution times (in milliseconds) for different algorithms.",
+    "time_required": { "min_hours": 4, "max_hours": 8 },
+    "difficulty": "Intermediate",
+    "tech_stack": ["C++", "Chrono Library"],
+    "hints": ["Use the `<chrono>` library for highly precise timing."],
+    "stretch_goals": ["Export the timing results into a CSV file for your Python tools to analyze later."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 39,
+    "phase": "3: Core Logic & Algorithms",
+    "title": "Text-Based Maze Generator",
+    "description": "Use a Depth-First Search (DFS) algorithm to procedurally generate a random, solvable ASCII maze in the terminal.",
+    "deliverable": "A script that outputs a unique maze layout using '#' for walls and ' ' for paths.",
+    "time_required": { "min_hours": 6, "max_hours": 10 },
+    "difficulty": "Advanced",
+    "tech_stack": ["C++", "Graph Theory"],
+    "hints": ["Represent the maze grid as a 2D array or a 1D vector with calculated indices."],
+    "stretch_goals": ["Ensure the generator guarantees at least one path from the top-left to the bottom-right."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 40,
+    "phase": "3: Core Logic & Algorithms",
+    "title": "A* Pathfinding Implementation",
+    "description": "Translate the Python A* logic you wrote in Week 26 into highly optimized, compiled C++ code.",
+    "deliverable": "A function that takes the maze from Week 39 and prints the shortest path to solve it.",
+    "time_required": { "min_hours": 6, "max_hours": 10 },
+    "difficulty": "Advanced",
+    "tech_stack": ["C++", "Heuristics"],
+    "hints": ["Use `std::priority_queue` to manage your open set efficiently."],
+    "stretch_goals": ["Allow diagonal movement with a higher movement cost."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 41,
+    "phase": "3: Core Logic & Algorithms",
+    "title": "A* Visualizer (SFML)",
+    "description": "Hook your C++ A* logic up to the SFML multimedia library to render the algorithm solving the maze visually in a 2D window.",
+    "deliverable": "A compiled desktop window displaying the algorithm searching and finding the path in real-time.",
+    "time_required": { "min_hours": 6, "max_hours": 12 },
+    "difficulty": "Advanced",
+    "tech_stack": ["C++", "SFML"],
+    "hints": ["SFML setup can be tricky. Take your time configuring the linker settings in your IDE."],
+    "stretch_goals": ["Allow the user to draw walls on the grid using their mouse before starting the algorithm."],
+    "resources": [{"name": "SFML Tutorials", "url": "https://www.sfml-dev.org/tutorials/2.6/"}],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 42,
+    "phase": "3: Core Logic & Algorithms",
+    "title": "Basic Game Loop & State Machine",
+    "description": "Write a pure C++ game loop (Update, Render, Process Input) and a State Machine to switch between 'Main Menu', 'Playing', and 'Game Over'.",
+    "deliverable": "A terminal application that perfectly loops and handles state transitions without crashing.",
+    "time_required": { "min_hours": 4, "max_hours": 8 },
+    "difficulty": "Intermediate",
+    "tech_stack": ["C++", "Design Patterns"],
+    "hints": ["Use `enum class` to strictly define your game states."],
+    "stretch_goals": ["Implement a 'Pause' state that pauses the logic but keeps the loop running."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 43,
+    "phase": "3: Core Logic & Algorithms",
+    "title": "JSON Save State System",
+    "description": "Integrate a C++ JSON library to serialize game variables (health, gold, level) and write them to a local file, then read them back on boot.",
+    "deliverable": "A robust save/load system for application data.",
+    "time_required": { "min_hours": 4, "max_hours": 8 },
+    "difficulty": "Intermediate",
+    "tech_stack": ["C++", "nlohmann/json", "File I/O"],
+    "hints": ["The `nlohmann/json` library is the industry standard for modern C++. It's a single header file, making it easy to include."],
+    "stretch_goals": ["Encrypt the save file using a basic XOR cipher to prevent save-scumming."],
+    "resources": [{"name": "JSON for Modern C++", "url": "https://github.com/nlohmann/json"}],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 44,
+    "phase": "3: Core Logic & Algorithms",
+    "title": "CLI Inventory Manager",
+    "description": "Build an object-oriented inventory system using C++ Vectors and Structs. Allow adding, dropping, and inspecting items.",
+    "deliverable": "A text interface where a user can manage a limited-slot inventory.",
+    "time_required": { "min_hours": 5, "max_hours": 9 },
+    "difficulty": "Intermediate",
+    "tech_stack": ["C++", "Vectors", "Structs"],
+    "hints": ["Use `std::vector` for the inventory. It dynamically resizes and is much safer than raw arrays."],
+    "stretch_goals": ["Implement weight limits. An item can't be added if it exceeds max carry weight."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 45,
+    "phase": "3: Core Logic & Algorithms",
+    "title": "PHASE CAPSTONE: 'Freserve'",
+    "description": "Combine the Game Loop, State Machine, Save System, and Inventory Manager into a complete text-based resource management survival game called 'Freserve'.",
+    "deliverable": "A fully compiled, playable C++ game where the user manages resources, explores zones, and progresses through days while saving their state.",
+    "time_required": { "min_hours": 10, "max_hours": 18 },
+    "difficulty": "Advanced",
+    "tech_stack": ["C++", "OOP", "File I/O", "Game Architecture"],
+    "hints": ["Design your class hierarchy on paper before writing code. Player -> Inventory -> Item."],
+    "stretch_goals": ["Add random events (e.g., 'A storm destroyed 5 wood') that trigger between turns based on RNG."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 46,
+    "phase": "4: Deep Dive into Java",
+    "title": "Java OOP & Banking App",
+    "description": "Transition to Java by building a strict Object-Oriented console banking application with Encapsulation (private balances, public deposit/withdraw methods).",
+    "deliverable": "A Java console app that simulates accounts and secure transactions.",
+    "time_required": { "min_hours": 4, "max_hours": 7 },
+    "difficulty": "Beginner",
+    "tech_stack": ["Java", "OOP", "Encapsulation"],
+    "hints": ["Get comfortable with the `public static void main(String[] args)` entry point."],
+    "stretch_goals": ["Implement an overdraft penalty feature."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 47,
+    "phase": "4: Deep Dive into Java",
+    "title": "RPG Inheritance System",
+    "description": "Use Inheritance and Polymorphism to design an RPG class system. Base class `Character`, derived classes `Warrior`, `Mage`, `Rogue`, each overriding an `attack()` method.",
+    "deliverable": "A script demonstrating dynamic method dispatch based on object type.",
+    "time_required": { "min_hours": 4, "max_hours": 8 },
+    "difficulty": "Intermediate",
+    "tech_stack": ["Java", "Inheritance", "Polymorphism"],
+    "hints": ["Use the `@Override` annotation to ensure you are correctly replacing the parent method."],
+    "stretch_goals": ["Create a battle simulator that puts an array of mixed characters against a Boss object."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 48,
+    "phase": "4: Deep Dive into Java",
+    "title": "Abstract Shapes & Interfaces",
+    "description": "Learn the difference between Interfaces and Abstract Classes by building a rigid geometry calculator (Area, Perimeter) for different shape objects.",
+    "deliverable": "A clean, extensible geometry library.",
+    "time_required": { "min_hours": 3, "max_hours": 6 },
+    "difficulty": "Beginner",
+    "tech_stack": ["Java", "Interfaces", "Abstract Classes"],
+    "hints": ["Interfaces define *what* a class can do (e.g., `Drawable`), Abstract classes define *what a class is* (e.g., `Shape`)."],
+    "stretch_goals": ["Add a custom Exception if a shape is instantiated with invalid dimensions (like negative radius)."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 49,
+    "phase": "4: Deep Dive into Java",
+    "title": "Secure Log Parser",
+    "description": "Read a massive server log file. Use Try/Catch blocks and Exception Handling to gracefully skip corrupted lines without crashing the program.",
+    "deliverable": "A file parsing utility that generates a clean summary report of warnings and errors.",
+    "time_required": { "min_hours": 4, "max_hours": 8 },
+    "difficulty": "Intermediate",
+    "tech_stack": ["Java", "File I/O", "Exception Handling"],
+    "hints": ["Use Java's `BufferedReader` for efficient large file reading."],
+    "stretch_goals": ["Use Regex (Regular Expressions) to extract specific IP addresses from the logs."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 50,
+    "phase": "4: Deep Dive into Java",
+    "title": "Custom HashMap Implementation",
+    "description": "Don't use `java.util.HashMap`. Build your own Hash Table data structure using an array of linked lists to handle collisions.",
+    "deliverable": "A functional Key-Value store mapped entirely from scratch.",
+    "time_required": { "min_hours": 6, "max_hours": 10 },
+    "difficulty": "Advanced",
+    "tech_stack": ["Java", "Data Structures", "Hashing"],
+    "hints": ["Understand the modulo operator `%` to map large hash codes to small array indices."],
+    "stretch_goals": ["Implement an automatic resizing function when the load factor gets too high."],
+    "resources": [{"name": "How HashMaps Work", "url": "https://www.geeksforgeeks.org/internal-working-of-hashmap-java/"}],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 51,
+    "phase": "4: Deep Dive into Java",
+    "title": "Multithreading & Race Conditions",
+    "description": "Create a program where two threads try to withdraw money from the same bank account simultaneously. Then, fix the bug using the `synchronized` keyword.",
+    "deliverable": "A simulation proving thread-safety issues and their solutions.",
+    "time_required": { "min_hours": 5, "max_hours": 9 },
+    "difficulty": "Intermediate",
+    "tech_stack": ["Java", "Concurrency", "Multithreading"],
+    "hints": ["Extend the `Thread` class or implement the `Runnable` interface."],
+    "stretch_goals": ["Use a Thread Pool (`ExecutorService`) to handle 100 simultaneous transactions."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 52,
+    "phase": "4: Deep Dive into Java",
+    "title": "Design Patterns: Singleton & Factory",
+    "description": "Implement the Singleton pattern for a `DatabaseConnection` class, and a Factory pattern to generate UI buttons dynamically.",
+    "deliverable": "A codebase demonstrating enterprise-level architectural patterns.",
+    "time_required": { "min_hours": 4, "max_hours": 8 },
+    "difficulty": "Intermediate",
+    "tech_stack": ["Java", "Design Patterns"],
+    "hints": ["A Singleton ensures a class only ever has one instance (useful for game managers or database links)."],
+    "stretch_goals": ["Implement the Builder pattern for constructing complex objects step-by-step."],
+    "resources": [{"name": "Refactoring Guru - Patterns", "url": "https://refactoring.guru/design-patterns/java"}],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 53,
+    "phase": "4: Deep Dive into Java",
+    "title": "Design Patterns: Weather Station (Observer)",
+    "description": "Build a weather station core object that automatically updates multiple display modules (Current, Stats, Forecast) using the Observer pattern.",
+    "deliverable": "A decoupled event-driven system.",
+    "time_required": { "min_hours": 5, "max_hours": 9 },
+    "difficulty": "Intermediate",
+    "tech_stack": ["Java", "Observer Pattern"],
+    "hints": ["The Subject maintains a list of Observers. When state changes, it loops through and calls `update()` on all of them."],
+    "stretch_goals": ["Allow display modules to dynamically subscribe and unsubscribe from the weather station at runtime."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 54,
+    "phase": "4: Deep Dive into Java",
+    "title": "JavaFX Desktop GUI",
+    "description": "Transition from the console to a real desktop application. Build a modern UI for a To-Do list using JavaFX and FXML.",
+    "deliverable": "A compiled windowed application with buttons, lists, and text fields.",
+    "time_required": { "min_hours": 6, "max_hours": 10 },
+    "difficulty": "Intermediate",
+    "tech_stack": ["Java", "JavaFX", "FXML"],
+    "hints": ["Use Scene Builder to drag-and-drop your UI layout instead of coding the XML by hand."],
+    "stretch_goals": ["Bind CSS stylesheets to your JavaFX app for a modern, flat-design look."],
+    "resources": [{"name": "JavaFX Scene Builder", "url": "https://gluonhq.com/products/scene-builder/"}],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 55,
+    "phase": "4: Deep Dive into Java",
+    "title": "JDBC SQLite Integration",
+    "description": "Connect your Java code to a local SQLite database using Java Database Connectivity (JDBC). Perform CRUD operations (Create, Read, Update, Delete).",
+    "deliverable": "A Java application that securely queries and modifies persistent database tables.",
+    "time_required": { "min_hours": 5, "max_hours": 9 },
+    "difficulty": "Intermediate",
+    "tech_stack": ["Java", "JDBC", "SQL"],
+    "hints": ["You will need to download the SQLite JDBC driver `.jar` file and add it to your classpath."],
+    "stretch_goals": ["Implement the DAO (Data Access Object) pattern to separate your SQL queries from your main logic."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 56,
+    "phase": "4: Deep Dive into Java",
+    "title": "Socket Chat Server",
+    "description": "Build a multithreaded network server using `java.net.Socket` that can accept multiple client connections simultaneously and broadcast messages to all of them.",
+    "deliverable": "A headless server application listening on a specific port.",
+    "time_required": { "min_hours": 6, "max_hours": 10 },
+    "difficulty": "Advanced",
+    "tech_stack": ["Java", "Networking", "Multithreading"],
+    "hints": ["Each client connection needs to be handed off to its own separate Thread so the server isn't blocked from accepting new connections."],
+    "stretch_goals": ["Implement server-side commands (like `/kick user`)."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 57,
+    "phase": "4: Deep Dive into Java",
+    "title": "Socket Chat Client GUI",
+    "description": "Build the JavaFX frontend for the chat server you made in Week 56. Connect over `localhost` and send/receive messages.",
+    "deliverable": "A functional desktop chat application (like a very simple Discord).",
+    "time_required": { "min_hours": 5, "max_hours": 9 },
+    "difficulty": "Advanced",
+    "tech_stack": ["Java", "JavaFX", "Networking"],
+    "hints": ["Updating JavaFX UI elements from a background network thread will crash the app. Use `Platform.runLater()` to safely update the UI."],
+    "stretch_goals": ["Add timestamps and usernames to the chat bubbles."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 58,
+    "phase": "4: Deep Dive into Java",
+    "title": "Unit Testing with JUnit",
+    "description": "Learn Test-Driven Development (TDD) by building a complex Math/String utility library and writing JUnit tests for every single method before you write the code.",
+    "deliverable": "A robust test suite that turns green when your code passes all edge cases.",
+    "time_required": { "min_hours": 4, "max_hours": 8 },
+    "difficulty": "Intermediate",
+    "tech_stack": ["Java", "JUnit", "TDD"],
+    "hints": ["Think of edge cases: What happens if a string is null? What if an integer is MAX_VALUE?"],
+    "stretch_goals": ["Integrate Mockito to mock out external database calls during testing."],
+    "resources": [{"name": "JUnit 5 User Guide", "url": "https://junit.org/junit5/docs/current/user-guide/"}],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 59,
+    "phase": "4: Deep Dive into Java",
+    "title": "Build Tools: Maven / Gradle",
+    "description": "Stop compiling via the command line or IDE buttons. Restructure an existing project to use Maven, managing your dependencies (like SQLite and JUnit) via a `pom.xml` file.",
+    "deliverable": "A standardized enterprise-ready project structure.",
+    "time_required": { "min_hours": 3, "max_hours": 6 },
+    "difficulty": "Beginner",
+    "tech_stack": ["Java", "Maven", "XML"],
+    "hints": ["Maven automatically handles downloading `.jar` files so you never have to manually add them to your classpath again."],
+    "stretch_goals": ["Create a Maven lifecycle hook to automatically run your JUnit tests every time you build a `.jar`."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 60,
+    "phase": "4: Deep Dive into Java",
+    "title": "PHASE CAPSTONE: Enterprise Inventory Desktop App",
+    "description": "Combine JavaFX, JDBC (SQLite), Multithreading, and Design Patterns into a massive desktop application. Build a Point-of-Sale/Inventory manager with a beautiful UI, persistent database, and a full JUnit test suite built with Maven.",
+    "deliverable": "A professional-grade desktop application ready for an enterprise portfolio.",
+    "time_required": { "min_hours": 12, "max_hours": 20 },
+    "difficulty": "Advanced",
+    "tech_stack": ["Java", "JavaFX", "JDBC", "JUnit", "Maven"],
+    "hints": ["Use the DAO design pattern to cleanly separate your database SQL commands from your JavaFX UI code."],
+    "stretch_goals": ["Implement a background thread that automatically checks stock levels every 5 minutes and triggers a UI alert if an item is low."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 61,
+    "phase": "5: Mobile App Dev (Android)",
+    "title": "Android Studio & UI Layouts",
+    "description": "Set up the Android Studio environment and build a responsive calculator UI using XML ConstraintLayout.",
+    "deliverable": "An Android emulator running a non-functional but perfectly scaled calculator interface.",
+    "time_required": { "min_hours": 4, "max_hours": 8 },
+    "difficulty": "Beginner",
+    "tech_stack": ["Android Studio", "XML", "Java"],
+    "hints": ["Spend time learning how ConstraintLayout anchors work. It will save you hours of UI headaches later."],
+    "stretch_goals": ["Support both portrait and landscape orientations with different XML layouts."],
+    "resources": [{"name": "Android UI Overview", "url": "https://developer.android.com/guide/topics/ui"}],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 62,
+    "phase": "5: Mobile App Dev (Android)",
+    "title": "Interactive State & Event Listeners",
+    "description": "Wire up your calculator UI to actual Java logic. Handle button clicks, update TextViews, and manage the app's state.",
+    "deliverable": "A fully functional calculator app running on your physical phone or emulator.",
+    "time_required": { "min_hours": 4, "max_hours": 7 },
+    "difficulty": "Beginner",
+    "tech_stack": ["Android SDK", "Java"],
+    "hints": ["Use `findViewById()` to link your XML elements to your Java objects."],
+    "stretch_goals": ["Add a 'history' pane that shows the last 5 calculations."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 63,
+    "phase": "5: Mobile App Dev (Android)",
+    "title": "Multi-Screen Navigation (Intents)",
+    "description": "Build a Quiz App with multiple screens (Start Menu, Quiz Screen, Results Screen). Use Intents to pass the final score between Activities.",
+    "deliverable": "An app that successfully navigates forward and backward without crashing or losing data.",
+    "time_required": { "min_hours": 5, "max_hours": 9 },
+    "difficulty": "Intermediate",
+    "tech_stack": ["Android SDK", "Intents", "Activity Lifecycle"],
+    "hints": ["Understand the Activity Lifecycle. What happens to your variables when the user minimizes the app?"],
+    "stretch_goals": ["Use `putExtra()` to send the user's name from the first screen to the results screen."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 64,
+    "phase": "5: Mobile App Dev (Android)",
+    "title": "Dynamic Lists with RecyclerView",
+    "description": "Build a Contacts or Inventory app. Use RecyclerView and a custom Adapter to display a scrollable list of hundreds of items efficiently.",
+    "deliverable": "A smooth, scrollable list UI that recycles memory off-screen.",
+    "time_required": { "min_hours": 6, "max_hours": 10 },
+    "difficulty": "Intermediate",
+    "tech_stack": ["Android SDK", "RecyclerView", "Adapters"],
+    "hints": ["RecyclerView is notoriously tricky the first time. Follow the boilerplate code carefully (ViewHolder, Adapter, LayoutManager)."],
+    "stretch_goals": ["Implement a swipe-to-delete feature using ItemTouchHelper."],
+    "resources": [{"name": "RecyclerView Documentation", "url": "https://developer.android.com/guide/topics/ui/layout/recyclerview"}],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 65,
+    "phase": "5: Mobile App Dev (Android)",
+    "title": "Local Storage (SharedPreferences)",
+    "description": "Create a Habit Tracker app that saves user preferences (like Dark Mode) and daily streaks using Android's built-in SharedPreferences.",
+    "deliverable": "An app that remembers user data even after it is completely closed and reopened.",
+    "time_required": { "min_hours": 3, "max_hours": 6 },
+    "difficulty": "Beginner",
+    "tech_stack": ["Android SDK", "SharedPreferences"],
+    "hints": ["SharedPreferences is for lightweight Key-Value pairs only, not massive datasets."],
+    "stretch_goals": ["Save a serialized JSON string into SharedPreferences to store a complex object."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 66,
+    "phase": "5: Mobile App Dev (Android)",
+    "title": "Fetching APIs in Android (Retrofit)",
+    "description": "Build a Movie Explorer app that fetches live data from the TMDB API using the Retrofit library and displays the movie posters in a grid.",
+    "deliverable": "A networked app that successfully requests, parses, and displays JSON data from the web.",
+    "time_required": { "min_hours": 6, "max_hours": 10 },
+    "difficulty": "Intermediate",
+    "tech_stack": ["Android SDK", "Retrofit", "Gson", "Glide/Picasso"],
+    "hints": ["Don't forget to add the `<uses-permission android:name=\"android.permission.INTERNET\" />` tag in your Manifest!"],
+    "stretch_goals": ["Add a search bar that queries the API dynamically as the user types."],
+    "resources": [{"name": "Retrofit Documentation", "url": "https://square.github.io/retrofit/"}],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 67,
+    "phase": "5: Mobile App Dev (Android)",
+    "title": "Persistent Data with Room Database",
+    "description": "Upgrade your Habit Tracker from Week 65. Use the Room persistence library (Android's SQLite wrapper) to store complex, structured logs.",
+    "deliverable": "An app with a fully functioning local database, utilizing DAOs (Data Access Objects).",
+    "time_required": { "min_hours": 6, "max_hours": 10 },
+    "difficulty": "Advanced",
+    "tech_stack": ["Android SDK", "Room", "SQLite"],
+    "hints": ["Room queries cannot run on the main UI thread. You must use background threads (Executors or Coroutines if using Kotlin)."],
+    "stretch_goals": ["Implement a query that returns the user's longest historical habit streak."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 68,
+    "phase": "5: Mobile App Dev (Android)",
+    "title": "Background Services & Notifications",
+    "description": "Build a timer app that continues counting down in a Background Service even when minimized, pushing a System Notification when finished.",
+    "deliverable": "A foreground service that safely interacts with Android's notification channels.",
+    "time_required": { "min_hours": 5, "max_hours": 9 },
+    "difficulty": "Intermediate",
+    "tech_stack": ["Android SDK", "Services", "NotificationManager"],
+    "hints": ["Android heavily restricts background services to save battery. Use a Foreground Service for a timer."],
+    "stretch_goals": ["Add action buttons directly onto the notification (e.g., 'Stop Timer')."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 69,
+    "phase": "5: Mobile App Dev (Android)",
+    "title": "Device Hardware & Permissions",
+    "description": "Build an audio recorder. Request runtime permissions from the user, access the device's microphone, and save an audio file to the local file system.",
+    "deliverable": "An app that successfully navigates Android's strict runtime permission dialogs and utilizes hardware sensors.",
+    "time_required": { "min_hours": 5, "max_hours": 8 },
+    "difficulty": "Intermediate",
+    "tech_stack": ["Android SDK", "MediaRecorder", "Permissions"],
+    "hints": ["Since Android 6.0, you can't just declare dangerous permissions in the Manifest; you must ask the user via a popup."],
+    "stretch_goals": ["Visualize the audio waveform dynamically on the screen while recording."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 70,
+    "phase": "5: Mobile App Dev (Android)",
+    "title": "PHASE CAPSTONE: 'Bandi' Voice Assistant (v1)",
+    "description": "Combine the microphone permissions, Intents, and the native Android SpeechRecognizer API to build Bandi, a voice-controlled assistant. Speak commands to set timers, open other apps, or fetch the weather.",
+    "deliverable": "A highly interactive, voice-activated Android application.",
+    "time_required": { "min_hours": 10, "max_hours": 16 },
+    "difficulty": "Advanced",
+    "tech_stack": ["Android SDK", "SpeechRecognizer", "TextToSpeech", "Retrofit"],
+    "hints": ["Use the native TextToSpeech engine so Bandi can actually talk back to you.", "Keep the command parsing simple for now (e.g., checking if the speech contains the word 'weather')."],
+    "stretch_goals": ["Implement a wake-word listener (requires a background service)."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 71,
+    "phase": "6: Machine Learning",
+    "title": "Scikit-Learn & Linear Regression",
+    "description": "Shift back to Python. Use Scikit-Learn to train a Linear Regression model that predicts housing prices based on square footage and bedrooms.",
+    "deliverable": "A Python script that loads CSV data, trains a model, and outputs a prediction with a calculated Mean Squared Error.",
+    "time_required": { "min_hours": 4, "max_hours": 8 },
+    "difficulty": "Beginner",
+    "tech_stack": ["Python", "Scikit-Learn", "Pandas"],
+    "hints": ["Always split your data into a 'Training Set' and a 'Test Set' using `train_test_split`."],
+    "stretch_goals": ["Plot the line of best fit over a scatter plot of your data using Matplotlib."],
+    "resources": [{"name": "Scikit-Learn Basics", "url": "https://scikit-learn.org/stable/tutorial/basic/tutorial.html"}],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 72,
+    "phase": "6: Machine Learning",
+    "title": "Logistic Regression & Classification",
+    "description": "Linear Regression is for continuous numbers. Use Logistic Regression to classify binary outcomes (e.g., predicting if a patient has a disease based on health metrics: Yes/No).",
+    "deliverable": "A classification model evaluated using a Confusion Matrix.",
+    "time_required": { "min_hours": 4, "max_hours": 7 },
+    "difficulty": "Beginner",
+    "tech_stack": ["Python", "Scikit-Learn"],
+    "hints": ["A Confusion Matrix shows True Positives, True Negatives, False Positives, and False Negatives."],
+    "stretch_goals": ["Calculate and print the Precision, Recall, and F1-Score of your model."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 73,
+    "phase": "6: Machine Learning",
+    "title": "Decision Trees & Random Forests",
+    "description": "Build a Decision Tree model to classify a more complex dataset (like the classic Iris flower dataset). Then, upgrade it to a Random Forest to prevent overfitting.",
+    "deliverable": "A robust ensemble model that outperforms a single decision tree.",
+    "time_required": { "min_hours": 5, "max_hours": 9 },
+    "difficulty": "Intermediate",
+    "tech_stack": ["Python", "Scikit-Learn"],
+    "hints": ["A Random Forest is essentially hundreds of Decision Trees voting on the best answer."],
+    "stretch_goals": ["Export a visual graph of one of the Decision Trees to a `.png` file."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 74,
+    "phase": "6: Machine Learning",
+    "title": "K-Means Clustering (Unsupervised)",
+    "description": "Take an unlabelled dataset of customer purchases and use K-Means Clustering to automatically discover hidden market segments.",
+    "deliverable": "A script that groups data points into 'K' clusters without knowing what the groups represent beforehand.",
+    "time_required": { "min_hours": 4, "max_hours": 8 },
+    "difficulty": "Intermediate",
+    "tech_stack": ["Python", "Scikit-Learn"],
+    "hints": ["Use the 'Elbow Method' to mathematically determine the optimal number for K."],
+    "stretch_goals": ["Create a 3D scatter plot of your clusters using Matplotlib's `mplot3d` toolkit."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 75,
+    "phase": "6: Machine Learning",
+    "title": "Natural Language Processing (NLP)",
+    "description": "Process a dataset of 10,000 movie reviews. Clean the text, remove stop words, and convert the sentences into a TF-IDF mathematical matrix.",
+    "deliverable": "A text processing pipeline that prepares raw English sentences for machine learning.",
+    "time_required": { "min_hours": 5, "max_hours": 9 },
+    "difficulty": "Intermediate",
+    "tech_stack": ["Python", "NLTK", "Scikit-Learn"],
+    "hints": ["TF-IDF stands for Term Frequency-Inverse Document Frequency. It weighs how important a word is to a document."],
+    "stretch_goals": ["Implement Lemmatization (converting 'running' and 'ran' into the base word 'run')."],
+    "resources": [{"name": "NLTK Documentation", "url": "https://www.nltk.org/"}],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 76,
+    "phase": "6: Machine Learning",
+    "title": "Spam Classifier Engine",
+    "description": "Combine the NLP pipeline from Week 75 with a Naive Bayes classifier to build a highly accurate Email/SMS Spam detector.",
+    "deliverable": "A CLI tool where you can type a custom sentence and the model instantly flags it as 'Spam' or 'Ham'.",
+    "time_required": { "min_hours": 5, "max_hours": 8 },
+    "difficulty": "Intermediate",
+    "tech_stack": ["Python", "Scikit-Learn", "Naive Bayes"],
+    "hints": ["Naive Bayes is remarkably fast and effective for text classification tasks."],
+    "stretch_goals": ["Pickle (serialize) the trained model to a `.pkl` file so you don't have to retrain it every time you run the script."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 77,
+    "phase": "6: Machine Learning",
+    "title": "Intro to Deep Learning (TensorFlow/PyTorch)",
+    "description": "Set up your deep learning environment. Build a simple Feedforward Neural Network to solve the classic MNIST dataset (identifying handwritten digits 0-9).",
+    "deliverable": "A trained neural network capable of recognizing handwritten numbers with over 90% accuracy.",
+    "time_required": { "min_hours": 6, "max_hours": 12 },
+    "difficulty": "Advanced",
+    "tech_stack": ["Python", "TensorFlow/Keras", "PyTorch"],
+    "hints": ["Pick either TensorFlow or PyTorch and stick with it. PyTorch is generally favored by researchers, while TensorFlow/Keras is great for beginners and deployment."],
+    "stretch_goals": ["Write a script that allows you to draw a digit in a desktop window and pass it to the model for real-time prediction."],
+    "resources": [{"name": "TensorFlow MNIST Tutorial", "url": "https://www.tensorflow.org/tutorials/quickstart/beginner"}],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 78,
+    "phase": "6: Machine Learning",
+    "title": "Convolutional Neural Networks (CNNs)",
+    "description": "Standard networks flatten images. Use a CNN to analyze spatial grids, building an image classifier that distinguishes between Cats and Dogs.",
+    "deliverable": "A deep learning model utilizing Convolutional and MaxPooling layers.",
+    "time_required": { "min_hours": 7, "max_hours": 14 },
+    "difficulty": "Advanced",
+    "tech_stack": ["Python", "Deep Learning", "CNN"],
+    "hints": ["Training images takes time. If you don't have a dedicated GPU, consider using Google Colab for free GPU access during this week."],
+    "stretch_goals": ["Implement Data Augmentation (flipping, rotating training images) to increase model accuracy."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 79,
+    "phase": "6: Machine Learning",
+    "title": "Transfer Learning (MobileNet)",
+    "description": "Don't train from scratch. Take a massive, pre-trained model like MobileNet, freeze its base layers, and retrain only the final layer on your custom image dataset.",
+    "deliverable": "A highly accurate, lightweight image classifier trained in a fraction of the time.",
+    "time_required": { "min_hours": 5, "max_hours": 9 },
+    "difficulty": "Advanced",
+    "tech_stack": ["Python", "Transfer Learning"],
+    "hints": ["MobileNet is specifically optimized to be small and fast, making it perfect for mobile devices (like Bandi!)."],
+    "stretch_goals": ["Export the final model into the TensorFlow Lite (`.tflite`) format."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 80,
+    "phase": "6: Machine Learning",
+    "title": "Deploying Models as APIs",
+    "description": "Take your Spam Classifier (Week 76) or Image Classifier (Week 79) and wrap it in a FastAPI server. Allow external applications to send data and receive predictions.",
+    "deliverable": "A functional REST API hosting a live Machine Learning model.",
+    "time_required": { "min_hours": 5, "max_hours": 8 },
+    "difficulty": "Intermediate",
+    "tech_stack": ["Python", "FastAPI", "Uvicorn"],
+    "hints": ["Load the `.pkl` or `.h5` model once when the API starts up, not inside the route function itself, to ensure fast response times."],
+    "stretch_goals": ["Deploy the API to a free cloud service like Render or Heroku."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 81,
+    "phase": "6: Machine Learning",
+    "title": "Sequence Models (RNN / LSTM)",
+    "description": "Learn how models handle sequential data like time or text. Train an LSTM (Long Short-Term Memory) network to predict the next word in a sentence or forecast stock prices.",
+    "deliverable": "A recurrent neural network capable of processing sequences of varying lengths.",
+    "time_required": { "min_hours": 8, "max_hours": 14 },
+    "difficulty": "Advanced",
+    "tech_stack": ["Python", "LSTM", "TensorFlow/PyTorch"],
+    "hints": ["LSTMs solve the 'vanishing gradient' problem, allowing the network to remember context from earlier in a sequence."],
+    "stretch_goals": ["Build a simple text-generation script that writes a paragraph in the style of Shakespeare based on your trained model."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 82,
+    "phase": "6: Machine Learning",
+    "title": "Open Source LLMs (Hugging Face)",
+    "description": "Skip training your own text models. Learn how to interface with the Hugging Face `transformers` library to download and run small, powerful, pre-trained AI models locally.",
+    "deliverable": "A local Python script utilizing an open-source model (like a quantized LLaMA or BERT) to answer questions or summarize text.",
+    "time_required": { "min_hours": 5, "max_hours": 10 },
+    "difficulty": "Advanced",
+    "tech_stack": ["Python", "Hugging Face", "Transformers"],
+    "hints": ["Look into 'Quantized' models (like GGUF format). They drastically reduce the RAM required to run the model locally."],
+    "stretch_goals": ["Wrap this Hugging Face model in your FastAPI server from Week 80."],
+    "resources": [{"name": "Hugging Face Course", "url": "https://huggingface.co/learn/nlp-course"}],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 83,
+    "phase": "6: Machine Learning",
+    "title": "On-Device ML (TensorFlow Lite)",
+    "description": "Learn the pipeline for optimizing models for edge devices. Convert your custom classifiers into the ultra-efficient `.tflite` format and test them on dummy data.",
+    "deliverable": "A highly compressed model ready for mobile integration.",
+    "time_required": { "min_hours": 4, "max_hours": 7 },
+    "difficulty": "Intermediate",
+    "tech_stack": ["Python", "TFLite Converter"],
+    "hints": ["Mobile devices don't have standard Python environments. TFLite bridges the gap between Python training and Java/C++ execution."],
+    "stretch_goals": ["Use Post-Training Quantization to shrink the model size by converting 32-bit floats to 8-bit integers."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 84,
+    "phase": "6: Machine Learning",
+    "title": "Audio Processing & ML",
+    "description": "Process audio files. Convert `.wav` files into spectrograms (visual representations of sound) and train a lightweight CNN to classify different spoken wake-words.",
+    "deliverable": "A model capable of recognizing a specific word (like 'Hey Bandi') from raw audio data.",
+    "time_required": { "min_hours": 7, "max_hours": 12 },
+    "difficulty": "Advanced",
+    "tech_stack": ["Python", "Librosa", "CNN"],
+    "hints": ["The `librosa` library is standard for extracting audio features like MFCCs (Mel-frequency cepstral coefficients)."],
+    "stretch_goals": ["Export this wake-word model to TFLite."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 85,
+    "phase": "6: Machine Learning",
+    "title": "PHASE CAPSTONE: 'Bandi' Smart Assistant (v2)",
+    "description": "Replace the basic rules in your Bandi Android app with actual ML logic. Integrate either a local TFLite model or connect the app via Retrofit to your FastAPI server running a Hugging Face NLP model.",
+    "deliverable": "An Android smart assistant that processes natural language using real machine learning logic.",
+    "time_required": { "min_hours": 12, "max_hours": 20 },
+    "difficulty": "Expert",
+    "tech_stack": ["Android (Java)", "TFLite / FastAPI", "Machine Learning"],
+    "hints": ["If running the model on a server via API, ensure your app displays a 'thinking' UI state while waiting for the network response.", "Combining your Android code from Week 70 with your ML code from Week 82 is the ultimate full-stack achievement."],
+    "stretch_goals": ["Integrate the TFLite wake-word model from Week 84 directly into an Android background service."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 86,
+    "phase": "7: Game Development (Godot)",
+    "title": "Godot Basics & Character Controller",
+    "description": "Set up Godot and build a 2D CharacterBody that can move, jump, and apply gravity using GDScript.",
+    "deliverable": "A playable 2D square that moves smoothly across the screen with proper physics.",
+    "time_required": { "min_hours": 4, "max_hours": 8 },
+    "difficulty": "Beginner",
+    "tech_stack": ["Godot Engine", "GDScript"],
+    "hints": ["Use the `_physics_process(delta)` function for anything involving movement and gravity to keep it tied to the framerate."],
+    "stretch_goals": ["Implement a 'coyote time' jump (allowing the player to jump a few frames after walking off a ledge)."],
+    "resources": [{"name": "Godot 2D Movement Docs", "url": "https://docs.godotengine.org/en/stable/tutorials/2d/2d_movement.html"}],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 87,
+    "phase": "7: Game Development (Godot)",
+    "title": "Collisions & TileMaps",
+    "description": "Design a basic level using Godot's TileMap system and ensure your character collides correctly with walls and floors.",
+    "deliverable": "A traversable 2D platformer level.",
+    "time_required": { "min_hours": 4, "max_hours": 7 },
+    "difficulty": "Beginner",
+    "tech_stack": ["Godot Engine", "TileMaps"],
+    "hints": ["Set up collision layers and masks properly. Player should be on Layer 1, World on Layer 2."],
+    "stretch_goals": ["Add an 'Ice' tile material that changes the player's friction when walked on."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 88,
+    "phase": "7: Game Development (Godot)",
+    "title": "Signals & UI Integration",
+    "description": "Build a Health Bar UI. Use Godot's Signal system to emit an event whenever the player takes damage, updating the UI automatically.",
+    "deliverable": "A decoupled system where game logic updates interface elements without hardcoding.",
+    "time_required": { "min_hours": 4, "max_hours": 8 },
+    "difficulty": "Intermediate",
+    "tech_stack": ["Godot Engine", "Signals", "UI CanvasLayer"],
+    "hints": ["Signals are Godot's version of the Observer pattern you built in Java during Week 53!"],
+    "stretch_goals": ["Animate the health bar so it smoothly drains instead of snapping instantly."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 89,
+    "phase": "7: Game Development (Godot)",
+    "title": "AnimationPlayer & Sprite Sheets",
+    "description": "Import a 2D sprite sheet and use the AnimationPlayer node to create Idle, Run, and Jump animations mapped to your player's state.",
+    "deliverable": "A visually expressive character that reacts to player input.",
+    "time_required": { "min_hours": 5, "max_hours": 9 },
+    "difficulty": "Intermediate",
+    "tech_stack": ["Godot Engine", "AnimationPlayer"],
+    "hints": ["Flip the sprite's `flip_h` property in code when changing directions left or right."],
+    "stretch_goals": ["Add a dust particle effect (CPUParticles2D) that triggers when the player lands a jump."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 90,
+    "phase": "7: Game Development (Godot)",
+    "title": "Enemy AI & State Machines",
+    "description": "Create an enemy that patrols between two points and switches to a 'Chase' state when the player enters its Detection Area.",
+    "deliverable": "An interactive NPC with basic decision-making logic.",
+    "time_required": { "min_hours": 6, "max_hours": 10 },
+    "difficulty": "Intermediate",
+    "tech_stack": ["Godot Engine", "Area2D", "State Machines"],
+    "hints": ["Use an Area2D node with a circular collision shape to represent the enemy's line of sight."],
+    "stretch_goals": ["Add a simple attack animation when the enemy gets within striking distance."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 91,
+    "phase": "7: Game Development (Godot)",
+    "title": "Save/Load Data in Godot",
+    "description": "Implement a system that serializes the player's position, health, and level into a JSON file, and can deserialize it to load the game.",
+    "deliverable": "A persistent save state system native to your Godot project.",
+    "time_required": { "min_hours": 4, "max_hours": 8 },
+    "difficulty": "Intermediate",
+    "tech_stack": ["Godot Engine", "FileAccess", "JSON"],
+    "hints": ["Use Godot's `user://` path to save files safely, avoiding read-only errors on exported games."],
+    "stretch_goals": ["Create a Main Menu screen with a 'Continue Game' button."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 92,
+    "phase": "7: Game Development (Godot)",
+    "title": "Audio Management & Polish",
+    "description": "Create a centralized Audio Manager (Singleton/Autoload) that handles background music and sound effects without cutting out when scenes change.",
+    "deliverable": "A polished auditory experience with volume control.",
+    "time_required": { "min_hours": 3, "max_hours": 6 },
+    "difficulty": "Beginner",
+    "tech_stack": ["Godot Engine", "Autoloads", "AudioStreamPlayer"],
+    "hints": ["Autoloads (Singletons) are nodes that persist across the entire runtime of the game, making them perfect for background music."],
+    "stretch_goals": ["Implement a settings menu that adjusts separate Audio Buses (Master, Music, SFX)."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 93,
+    "phase": "7: Game Development (Godot)",
+    "title": "Stepping into 3D: Environments",
+    "description": "Leave 2D behind. Set up a 3D Godot scene, implement a first-person Camera3D, and build a basic room using CSG (Constructive Solid Geometry) nodes.",
+    "deliverable": "A navigable 3D environment.",
+    "time_required": { "min_hours": 5, "max_hours": 9 },
+    "difficulty": "Intermediate",
+    "tech_stack": ["Godot Engine", "3D Nodes", "CSG"],
+    "hints": ["CSG nodes are fantastic for rapid prototyping levels without needing to import models from Blender."],
+    "stretch_goals": ["Add a DirectionalLight3D and enable shadows."],
+    "resources": [{"name": "Godot 3D Basics", "url": "https://docs.godotengine.org/en/stable/tutorials/3d/index.html"}],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 94,
+    "phase": "7: Game Development (Godot)",
+    "title": "3D Raycasting & Interactions",
+    "description": "Use a RayCast3D node attached to your first-person camera to detect when the player is looking at an interactable object (like a door or a switch).",
+    "deliverable": "A functional interaction system for 3D worlds.",
+    "time_required": { "min_hours": 5, "max_hours": 9 },
+    "difficulty": "Intermediate",
+    "tech_stack": ["Godot Engine", "RayCast3D"],
+    "hints": ["Ensure your interactable objects are on a specific collision layer so the RayCast only detects them and ignores standard walls."],
+    "stretch_goals": ["Change the player's crosshair UI when looking at an interactable object."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 95,
+    "phase": "7: Game Development (Godot)",
+    "title": "Intro to Shader Programming",
+    "description": "Write a custom visual shader (using Godot's visual shader editor or raw GLSL syntax) to create an animated, glowing water texture or a forcefield effect.",
+    "deliverable": "A visually impressive, GPU-rendered material.",
+    "time_required": { "min_hours": 6, "max_hours": 10 },
+    "difficulty": "Advanced",
+    "tech_stack": ["Godot Engine", "Shaders", "GPU Logic"],
+    "hints": ["Shaders run directly on the graphics card and manipulate the color or position of every single pixel/vertex simultaneously."],
+    "stretch_goals": ["Make the water shader interact with the `TIME` variable so it ripples endlessly."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 96,
+    "phase": "7: Game Development (Godot)",
+    "title": "Exporting for Web (HTML5)",
+    "description": "Learn the export pipeline. Take your polished 2D platformer from earlier and export it as an HTML5 package. Test it locally in your browser.",
+    "deliverable": "A standalone game that runs natively in a web browser without any installation.",
+    "time_required": { "min_hours": 3, "max_hours": 6 },
+    "difficulty": "Beginner",
+    "tech_stack": ["Godot Engine", "WebAssembly"],
+    "hints": ["You will need to install Godot's export templates. Make sure to choose 'Web' as your target platform."],
+    "stretch_goals": ["Embed the exported game directly into a custom HTML frame on your 130-week GitHub Pages site."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 97,
+    "phase": "7: Game Development (Godot)",
+    "title": "Godot REST API Integration",
+    "description": "Use Godot's HTTPRequest node to send and receive JSON data from the internet (e.g., fetching a 'Message of the Day' from a public API).",
+    "deliverable": "A game that dynamically updates its content from a live web server.",
+    "time_required": { "min_hours": 5, "max_hours": 9 },
+    "difficulty": "Intermediate",
+    "tech_stack": ["Godot Engine", "HTTPRequest", "JSON"],
+    "hints": ["Godot processes HTTP requests asynchronously. You must connect the `request_completed` signal to handle the data when it finally arrives."],
+    "stretch_goals": ["Post dummy high score data to your JSONBin API from Week 1."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 98,
+    "phase": "7: Game Development (Godot)",
+    "title": "Procedural Level Generation",
+    "description": "Write an algorithm that uses Godot's FastNoiseLite or random walkers to procedurally generate a dungeon layout or terrain map at runtime.",
+    "deliverable": "A game where every playthrough yields a completely different level.",
+    "time_required": { "min_hours": 7, "max_hours": 12 },
+    "difficulty": "Advanced",
+    "tech_stack": ["Godot Engine", "Algorithms", "TileMap/GridMap"],
+    "hints": ["Start simple: randomly place 'room' nodes and connect them with corridors using your A* logic from Phase 3."],
+    "stretch_goals": ["Add an RNG 'seed' input so users can share and replay specific generation layouts."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 99,
+    "phase": "7: Game Development (Godot)",
+    "title": "Juice & Game Feel",
+    "description": "Take an existing project and add 'juice': screen shake, particle explosions on death, hit-stop (briefly pausing time on impact), and dynamic lighting.",
+    "deliverable": "A game that feels professional, snappy, and deeply satisfying to play.",
+    "time_required": { "min_hours": 5, "max_hours": 10 },
+    "difficulty": "Intermediate",
+    "tech_stack": ["Godot Engine", "Tweens", "Game Design"],
+    "hints": ["Use Godot's `Tween` system to smoothly interpolate properties (like scaling up an enemy when hit)."],
+    "stretch_goals": ["Implement a chromatic aberration shader that triggers briefly during large explosions."],
+    "resources": [{"name": "Game Feel (Juice it or lose it)", "url": "https://www.youtube.com/watch?v=Fy0aCDmgnxg"}],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 100,
+    "phase": "7: Game Development (Godot)",
+    "title": "PHASE CAPSTONE: Web-Exported Action Game",
+    "description": "Combine movement, AI, shaders, juice, and audio into a polished, 5-minute arcade experience. Export it to WebAssembly and host it live on your GitHub Pages portfolio.",
+    "deliverable": "A complete, portfolio-ready browser game.",
+    "time_required": { "min_hours": 12, "max_hours": 20 },
+    "difficulty": "Advanced",
+    "tech_stack": ["Godot Engine", "GDScript", "HTML5 Export"],
+    "hints": ["Scope incredibly small. One solid level that feels great is vastly superior to 10 buggy, unfinished levels."],
+    "stretch_goals": ["Add a global leaderboard system using HTTPRequest (which you will build the backend for in Phase 8)."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 101,
+    "phase": "8: Full-Stack & Integration",
+    "title": "Node.js & Express Server",
+    "description": "Set up a fundamental Node.js backend using the Express framework. Create basic GET and POST routes that return JSON data.",
+    "deliverable": "A local web server running on port 3000.",
+    "time_required": { "min_hours": 3, "max_hours": 6 },
+    "difficulty": "Beginner",
+    "tech_stack": ["Node.js", "Express.js", "JavaScript"],
+    "hints": ["Use Postman or ThunderClient (VS Code Extension) to test your API routes without needing a frontend."],
+    "stretch_goals": ["Implement an error-handling middleware that catches unknown routes (404s)."],
+    "resources": [{"name": "Express Hello World", "url": "https://expressjs.com/en/starter/hello-world.html"}],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 102,
+    "phase": "8: Full-Stack & Integration",
+    "title": "NoSQL Database Integration (MongoDB)",
+    "description": "Connect your Express server to a free MongoDB Atlas cluster using Mongoose. Define a schema for a 'User' and perform CRUD operations.",
+    "deliverable": "A cloud-connected API capable of reading and writing permanent data.",
+    "time_required": { "min_hours": 5, "max_hours": 9 },
+    "difficulty": "Intermediate",
+    "tech_stack": ["Node.js", "MongoDB", "Mongoose"],
+    "hints": ["Never commit your MongoDB connection string (URI) to GitHub. Use a `.env` file to store environment variables."],
+    "stretch_goals": ["Implement data validation in your Mongoose schema (e.g., ensuring an email string is formatted correctly)."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 103,
+    "phase": "8: Full-Stack & Integration",
+    "title": "User Authentication (JWT & bcrypt)",
+    "description": "Build a secure registration and login system. Hash user passwords with bcrypt before saving them to MongoDB, and issue JSON Web Tokens (JWT) for session management.",
+    "deliverable": "A secure, stateless authentication pipeline.",
+    "time_required": { "min_hours": 6, "max_hours": 10 },
+    "difficulty": "Advanced",
+    "tech_stack": ["Node.js", "JWT", "bcrypt"],
+    "hints": ["A JWT is essentially a digital VIP pass. The server signs it, hands it to the user, and checks the signature on future requests."],
+    "stretch_goals": ["Create a protected route that can only be accessed if a valid JWT is provided in the Authorization header."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 104,
+    "phase": "8: Full-Stack & Integration",
+    "title": "Image Uploads to Cloudinary",
+    "description": "Implement a route that allows users to upload a profile picture. Use Multer to handle the incoming file and upload it to a free Cloudinary CDN, storing the image URL in MongoDB.",
+    "deliverable": "An API capable of handling and routing binary file data securely.",
+    "time_required": { "min_hours": 5, "max_hours": 9 },
+    "difficulty": "Intermediate",
+    "tech_stack": ["Node.js", "Multer", "Cloudinary API"],
+    "hints": ["APIs usually handle JSON text. To handle files, your client must send data as `multipart/form-data`."],
+    "stretch_goals": ["Resize the image on the server using a library like Sharp before sending it to Cloudinary to save bandwidth."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 105,
+    "phase": "8: Full-Stack & Integration",
+    "title": "Real-Time Comms with WebSockets",
+    "description": "Standard APIs require the client to ask for data. WebSockets allow the server to push data instantly. Build a real-time global chat room using Socket.io.",
+    "deliverable": "A server that broadcasts messages instantly to all connected clients.",
+    "time_required": { "min_hours": 6, "max_hours": 10 },
+    "difficulty": "Advanced",
+    "tech_stack": ["Node.js", "Socket.io", "WebSockets"],
+    "hints": ["WebSockets run alongside your Express server but handle connections entirely differently. Think of it as an open phone line."],
+    "stretch_goals": ["Implement private 'rooms' so users can chat in isolated channels."],
+    "resources": [{"name": "Socket.io Chat Tutorial", "url": "https://socket.io/get-started/chat"}],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 106,
+    "phase": "8: Full-Stack & Integration",
+    "title": "API Security & Rate Limiting",
+    "description": "Protect your API from abuse. Implement Helmet.js to secure HTTP headers, CORS to restrict domain access, and a Rate Limiter to prevent spam requests.",
+    "deliverable": "A hardened, production-ready backend.",
+    "time_required": { "min_hours": 4, "max_hours": 7 },
+    "difficulty": "Intermediate",
+    "tech_stack": ["Node.js", "Security Middleware"],
+    "hints": ["CORS (Cross-Origin Resource Sharing) will block your GitHub Pages site from talking to your server unless you explicitly whitelist the GitHub domain."],
+    "stretch_goals": ["Set up logging with Morgan or Winston to track all incoming requests to a server log file."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 107,
+    "phase": "8: Full-Stack & Integration",
+    "title": "Containerization with Docker Basics",
+    "description": "Write a `Dockerfile` that packages your Node.js application and its environment into an isolated container, ensuring it runs identically on any machine.",
+    "deliverable": "A dockerized web server.",
+    "time_required": { "min_hours": 5, "max_hours": 9 },
+    "difficulty": "Intermediate",
+    "tech_stack": ["Docker", "DevOps"],
+    "hints": ["Containers solve the 'It works on my machine!' problem forever."],
+    "stretch_goals": ["Use `docker-compose` to spin up your Node server and a local MongoDB database instance simultaneously."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 108,
+    "phase": "8: Full-Stack & Integration",
+    "title": "Backend Deployment (Render/Heroku)",
+    "description": "Take your fully secured, database-connected API and deploy it live to the cloud so your GitHub Pages portfolio can communicate with it globally.",
+    "deliverable": "A live, publicly accessible API endpoint.",
+    "time_required": { "min_hours": 3, "max_hours": 6 },
+    "difficulty": "Beginner",
+    "tech_stack": ["Cloud Deployment", "PaaS"],
+    "hints": ["Ensure you configure your Environment Variables (like your MongoDB URI and JWT Secret) directly inside your hosting provider's dashboard."],
+    "stretch_goals": ["Set up an automated CI/CD pipeline so the server redeploys automatically when you push code to GitHub."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 109,
+    "phase": "8: Full-Stack & Integration",
+    "title": "Cross-Platform Dashboard UI",
+    "description": "Build a sleek frontend dashboard (HTML/CSS/JS) specifically designed to consume, display, and interact with the data from your newly deployed Node.js API.",
+    "deliverable": "The visual interface for your backend services.",
+    "time_required": { "min_hours": 6, "max_hours": 10 },
+    "difficulty": "Intermediate",
+    "tech_stack": ["Frontend Web Dev", "REST Consumption"],
+    "hints": ["Fetch the JWT token during login and store it in `localStorage`, then attach it to the headers of all subsequent API requests."],
+    "stretch_goals": ["Add pagination to your API and dashboard so you only load 10 items at a time."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 110,
+    "phase": "8: Full-Stack & Integration",
+    "title": "PHASE CAPSTONE: Global High-Score Network",
+    "description": "The ultimate integration. Retrofit your Godot game (Week 100) or Android app (Bandi) to send score/usage data to your live Node.js backend. Display that global data dynamically on your GitHub Pages portfolio.",
+    "deliverable": "A complete ecosystem: a game, a server, a database, and a web dashboard, all communicating flawlessly in real-time.",
+    "time_required": { "min_hours": 10, "max_hours": 18 },
+    "difficulty": "Expert",
+    "tech_stack": ["Node.js", "Godot/Android", "MongoDB", "Web Dev"],
+    "hints": ["Double-check your CORS policies on the server to ensure both the Godot Web Export and your main site have permission to push/pull data."],
+    "stretch_goals": ["Implement a Socket.io feed on the website that flashes whenever a new high score is achieved globally in real-time."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 111,
+    "phase": "9: Ethical Hacking & Security",
+    "title": "Network Packet Sniffer",
+    "description": "Use Python and the Scapy library to capture live network traffic and inspect the contents of unencrypted HTTP packets.",
+    "deliverable": "A script that outputs the source and destination IPs of traffic on your local network.",
+    "time_required": { "min_hours": 5, "max_hours": 9 },
+    "difficulty": "Intermediate",
+    "tech_stack": ["Python", "Scapy", "Networking"],
+    "hints": ["You will likely need to run this script with Administrator/Sudo privileges to access the network interface card."],
+    "stretch_goals": ["Filter the output to only show packets containing POST requests (where passwords might be submitted)."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 112,
+    "phase": "9: Ethical Hacking & Security",
+    "title": "Python Port Scanner",
+    "description": "Build a custom command-line tool that scans a target IP address for open ports to identify potential entry points.",
+    "deliverable": "A CLI tool that takes an IP address and outputs a list of open ports and services.",
+    "time_required": { "min_hours": 4, "max_hours": 8 },
+    "difficulty": "Intermediate",
+    "tech_stack": ["Python", "Socket Library"],
+    "hints": ["Use multi-threading so it doesn't take hours to scan all 65,535 ports."],
+    "stretch_goals": ["Grab the banner of the open port to detect if it's an SSH or HTTP server."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 113,
+    "phase": "9: Ethical Hacking & Security",
+    "title": "Offline Password Cracker",
+    "description": "Write a script that takes a leaked SHA-256 hash and compares it against a common password dictionary file (like rockyou.txt) to crack it.",
+    "deliverable": "A dictionary brute-force tool.",
+    "time_required": { "min_hours": 3, "max_hours": 6 },
+    "difficulty": "Beginner",
+    "tech_stack": ["Python", "Hashlib", "Cryptography"],
+    "hints": ["You are just hashing every word in the dictionary file and seeing if the resulting string matches the stolen hash."],
+    "stretch_goals": ["Implement a 'Salt' parameter to see how salted hashes defeat basic dictionary attacks."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 114,
+    "phase": "9: Ethical Hacking & Security",
+    "title": "Directory Fuzzer (DirBuster Clone)",
+    "description": "Build a tool that brute-forces hidden directories on a web server (e.g., trying `/admin`, `/backup`, `/test`) and logs the HTTP status codes.",
+    "deliverable": "A script that discovers unlinked pages on a target website.",
+    "time_required": { "min_hours": 4, "max_hours": 7 },
+    "difficulty": "Intermediate",
+    "tech_stack": ["Python", "Requests"],
+    "hints": ["Only test this against a local Node.js server you own! Scanning external sites without permission is illegal."],
+    "stretch_goals": ["Add an argument to change the user-agent string to spoof a mobile browser."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 115,
+    "phase": "9: Ethical Hacking & Security",
+    "title": "SQL Injection (SQLi) Tester",
+    "description": "Write a Python script that automatically appends common SQL injection payloads (like `' OR 1=1 --`) to a website's URL parameters and checks the response for database errors.",
+    "deliverable": "An automated vulnerability scanner for databases.",
+    "time_required": { "min_hours": 5, "max_hours": 9 },
+    "difficulty": "Advanced",
+    "tech_stack": ["Python", "Requests", "SQL"],
+    "hints": ["Look for words like 'Syntax error' or 'MySQL' in the HTML response text to verify the injection worked."],
+    "stretch_goals": ["Extract the database version name automatically from a vulnerable endpoint."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 116,
+    "phase": "9: Ethical Hacking & Security",
+    "title": "Cross-Site Scripting (XSS) Scanner",
+    "description": "Create a script that submits safe JavaScript payloads (`<script>alert(1)</script>`) into forms on a local server to see if the input is sanitized.",
+    "deliverable": "An automated form tester that identifies potential XSS vulnerabilities.",
+    "time_required": { "min_hours": 5, "max_hours": 8 },
+    "difficulty": "Intermediate",
+    "tech_stack": ["Python", "Requests", "HTML Parsing"],
+    "hints": ["If your payload reflects directly back in the HTML response without being escaped (e.g., converted to `&lt;script&gt;`), it's vulnerable."],
+    "stretch_goals": ["Test for Stored XSS by submitting a payload and then checking a completely different page (like a comments section) to see if it executed."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 117,
+    "phase": "9: Ethical Hacking & Security",
+    "title": "Subdomain Enumeration Tool",
+    "description": "Build an OSINT (Open Source Intelligence) tool that queries public DNS records to map out hidden subdomains of a target company (e.g., `dev.example.com`).",
+    "deliverable": "A reconnaissance script that expands an attack surface map.",
+    "time_required": { "min_hours": 4, "max_hours": 8 },
+    "difficulty": "Intermediate",
+    "tech_stack": ["Python", "dnspython", "APIs"],
+    "hints": ["You can use the `dnspython` library to attempt zone transfers, or query free APIs like crt.sh."],
+    "stretch_goals": ["Export the discovered subdomains into a clean HTML report."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 118,
+    "phase": "9: Ethical Hacking & Security",
+    "title": "Malware Sandbox Simulation",
+    "description": "Write a harmless 'Ransomware Simulator' in C++ that traverses a specific dummy folder, encrypts all the `.txt` files using XOR encryption, and drops a 'readme' note.",
+    "deliverable": "A compiled executable demonstrating how cryptographic malware behaves on a system.",
+    "time_required": { "min_hours": 6, "max_hours": 10 },
+    "difficulty": "Advanced",
+    "tech_stack": ["C++", "File I/O", "Cryptography"],
+    "hints": ["Triple-check your file path logic. Hardcode the target to a specific testing folder so you don't accidentally encrypt your actual projects."],
+    "stretch_goals": ["Write the decryption function that restores the files when a key is provided."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 119,
+    "phase": "9: Ethical Hacking & Security",
+    "title": "API JWT Cracker",
+    "description": "Extract a JSON Web Token (JWT) from a web request, decode its payload, and write a script that attempts to brute-force the server's secret signing key.",
+    "deliverable": "A script that demonstrates why weak JWT secrets lead to total authentication bypass.",
+    "time_required": { "min_hours": 4, "max_hours": 8 },
+    "difficulty": "Advanced",
+    "tech_stack": ["Python", "PyJWT", "Cryptography"],
+    "hints": ["You don't need to attack the server to crack a JWT; the cracking happens entirely offline on your own machine."],
+    "stretch_goals": ["Modify the JWT payload to elevate privileges (e.g., `\"admin\": true`) and sign it with the cracked key."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 120,
+    "phase": "9: Ethical Hacking & Security",
+    "title": "PHASE CAPSTONE: Automated Penetration Report Tool",
+    "description": "Combine your Port Scanner, DirBuster, and SQLi tools into one master script. Point it at a local server, run it, and output a professional, formatted PDF security report.",
+    "deliverable": "An automated vulnerability scanner that generates client-ready deliverables.",
+    "time_required": { "min_hours": 8, "max_hours": 14 },
+    "difficulty": "Expert",
+    "tech_stack": ["Python", "ReportLab", "Bash scripting"],
+    "hints": ["Use the `reportlab` library in Python to dynamically generate the PDF structure."],
+    "stretch_goals": ["Assign a severity score (Low, Medium, High, Critical) to each vulnerability found."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 121,
+    "phase": "10: The Ultimate Capstone",
+    "title": "Ecosystem Architecture & UML",
+    "description": "No code this week. Design the architecture for your ultimate platform (e.g., a massive habit-tracking RPG ecosystem). Draw database schemas, API routes, and wireframes.",
+    "deliverable": "A comprehensive project design document detailing how Android, Web, and ML will interact.",
+    "time_required": { "min_hours": 4, "max_hours": 8 },
+    "difficulty": "Intermediate",
+    "tech_stack": ["System Design", "UML", "Figma"],
+    "hints": ["Identify potential bottlenecks early. If your game pings the database every 60 frames, your server will crash."],
+    "stretch_goals": ["Write user stories and acceptance criteria for the core features."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 122,
+    "phase": "10: The Ultimate Capstone",
+    "title": "Core Node.js API & Database",
+    "description": "Build the central nervous system. Set up the Express API, MongoDB cluster, user authentication, and secure endpoints for your ecosystem.",
+    "deliverable": "A deployed, hardened backend API handling core user logic.",
+    "time_required": { "min_hours": 8, "max_hours": 15 },
+    "difficulty": "Advanced",
+    "tech_stack": ["Node.js", "Express", "MongoDB", "JWT"],
+    "hints": ["Apply the security middleware (Helmet, Rate Limiting) immediately, not as an afterthought."],
+    "stretch_goals": ["Implement a password reset flow using nodemailer."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 123,
+    "phase": "10: The Ultimate Capstone",
+    "title": "Machine Learning Integration",
+    "description": "Train a model for your ecosystem (e.g., predicting when a user is most likely to break their habit streak based on past data) and host it via FastAPI or directly in Node.",
+    "deliverable": "An AI microservice that the main backend can query for intelligent insights.",
+    "time_required": { "min_hours": 10, "max_hours": 16 },
+    "difficulty": "Expert",
+    "tech_stack": ["Python", "Scikit-Learn", "FastAPI", "Docker"],
+    "hints": ["Keep the ML server separate from the main Node server so intensive calculations don't block basic API requests."],
+    "stretch_goals": ["Dockerize the ML API for easier cloud deployment."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 124,
+    "phase": "10: The Ultimate Capstone",
+    "title": "Web Dashboard Frontend",
+    "description": "Build the browser interface. Allow users to register, log in, and view their personalized data and ML insights on an interactive HTML/CSS/JS dashboard.",
+    "deliverable": "A responsive frontend application communicating securely with your Node API.",
+    "time_required": { "min_hours": 10, "max_hours": 18 },
+    "difficulty": "Advanced",
+    "tech_stack": ["Vanilla JS", "CSS Grid", "REST"],
+    "hints": ["Ensure the dashboard gracefully handles API errors (like if the server is offline)."],
+    "stretch_goals": ["Use Chart.js to visualize the user's progress and the ML predictions."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 125,
+    "phase": "10: The Ultimate Capstone",
+    "title": "Native Android Client",
+    "description": "Build the mobile counterpart. Use Retrofit to connect an Android application to the exact same Node.js database, keeping data synced between phone and web.",
+    "deliverable": "A polished mobile app offering native ecosystem access.",
+    "time_required": { "min_hours": 10, "max_hours": 18 },
+    "difficulty": "Advanced",
+    "tech_stack": ["Android Studio", "Java", "Retrofit", "RecyclerView"],
+    "hints": ["Use SharedPreferences to store the JWT so the user stays logged in between app launches."],
+    "stretch_goals": ["Integrate a native Android background service to send push notifications when the ML model predicts a streak loss."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 126,
+    "phase": "10: The Ultimate Capstone",
+    "title": "Godot Game Client",
+    "description": "Build a small Godot game that acts as a client. Use Godot's HTTPRequest node so users can log in, play the game, and have their high scores posted to the central ecosystem database.",
+    "deliverable": "A playable game connected to a global cloud backend.",
+    "time_required": { "min_hours": 10, "max_hours": 16 },
+    "difficulty": "Advanced",
+    "tech_stack": ["Godot Engine", "GDScript", "HTTPRequest"],
+    "hints": ["Parse the JSON response from your login route to capture the JWT and attach it to the `Authorization` header of your score-posting requests."],
+    "stretch_goals": ["Export the Godot game to HTML5 and embed it directly into your Web Dashboard."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 127,
+    "phase": "10: The Ultimate Capstone",
+    "title": "Security Audit & Penetration Test",
+    "description": "Switch hats. Use the tools you built in Phase 9 to ruthlessly attack your Ultimate ecosystem. Attempt SQL injection, test JWT cracking, and fuzz your APIs.",
+    "deliverable": "A multi-page vulnerability assessment report detailing the flaws in your own system.",
+    "time_required": { "min_hours": 6, "max_hours": 10 },
+    "difficulty": "Expert",
+    "tech_stack": ["Python Security Tools", "Burp Suite", "Kali Linux"],
+    "hints": ["Be thorough. Try to bypass your Android app's authentication by intercepting the network traffic."],
+    "stretch_goals": ["Write the code patches to permanently fix the vulnerabilities you discovered."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 128,
+    "phase": "10: The Ultimate Capstone",
+    "title": "CI/CD & Final Deployment",
+    "description": "Set up automated pipelines (GitHub Actions) to run your JUnit/Python tests automatically when code is pushed, and configure continuous deployment to your cloud servers.",
+    "deliverable": "An enterprise-grade, automated deployment pipeline.",
+    "time_required": { "min_hours": 6, "max_hours": 10 },
+    "difficulty": "Advanced",
+    "tech_stack": ["GitHub Actions", "Docker", "Cloud Hosting"],
+    "hints": ["Automation is key to modern development. If you push a fix to main, the server should update itself."],
+    "stretch_goals": ["Write a GitHub Action that automatically formats your Python code using `Black` before committing."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 129,
+    "phase": "10: The Ultimate Capstone",
+    "title": "Documentation & README Polish",
+    "description": "A project without documentation doesn't exist to recruiters. Write comprehensive, beautiful READMEs for every single repository involved in the Capstone.",
+    "deliverable": "Professional markdown documentation with screenshots, architecture diagrams, and setup instructions.",
+    "time_required": { "min_hours": 5, "max_hours": 9 },
+    "difficulty": "Beginner",
+    "tech_stack": ["Markdown", "Technical Writing"],
+    "hints": ["Assume the person reading your documentation has never seen your code. Walk them through how to run it step-by-step."],
+    "stretch_goals": ["Use a tool like Swagger or Postman to generate beautiful documentation for your API endpoints."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  },
+  {
+    "week": 130,
+    "phase": "10: The Ultimate Capstone",
+    "title": "The Final Launch",
+    "description": "Final review. Click every button, test every flow, check every checkbox on your 130-week GitHub Pages tracker, and formally publish your portfolio to the world.",
+    "deliverable": "The culmination of 130 weeks of relentless discipline.",
+    "time_required": { "min_hours": 2, "max_hours": 4 },
+    "difficulty": "Expert",
+    "tech_stack": ["Everything"],
+    "hints": ["Take a deep breath and celebrate. You've earned it."],
+    "stretch_goals": ["Write an article on Medium or Dev.to summarizing your 2.5-year journey and the biggest lessons you learned."],
+    "resources": [],
+    "status": "pending",
+    "links": { "github_repo": "", "live_demo": "" }
+  }
+  
+]

